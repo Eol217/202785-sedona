@@ -5,111 +5,111 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="page-header">
-      <div class="page-header__logo">
-        <img src="http://placehold.it/102x83" width="102" height="83" alt="City of Sedona">
+    <header class="header">
+      <div class="header__logo">
+        <img class="header__logo-img" src="http://placehold.it/102x83" width="102" height="83" alt="City of Sedona">
       </div>
       <h1 class="visually-hidden">Sedona "Because the Grand Canyon sucks!"</h1>
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
-            <li class="main-nav__item"><a href="#">Фото и видео</a></li>
-            <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
-            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
-          </ul>
+          <menu class="main-nav__list">
+            <a class="main-nav__item main-nav__item--active">Главная</a>
+            <a class="main-nav__item href="#">Фото и видео</a>
+            <a class="main-nav__item href="#">Форма отзыва</a>
+            <a class="main-nav__item href="#">HTML Academy</a>
+          </menu>
         </div>
       </nav>
-      <div class="page-header__promo page-header__promo--main">
-          <img src="http://placehold.it/282x214" alt="">
-      </div>
-      <div class="page-header__description">
-        <h2>СЕДОНА — небольшой городок в Аризоне, заслувающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
-      </div>
     </header>
+    <div class="intro">
+      <div class="intro__promo intro__promo--main">
+          <img class="intro__svg-title" src="http://placehold.it/282x214" alt="">
+      </div>
+      <div class="intro__description">
+        <h2 class="intro__title">СЕДОНА — небольшой городок в Аризоне, заслувающий большего!</h2>
+        <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+      </div>
+    </div>
 
     <section class="features">
-      <div class="features-item features__item--first">
-        <header class="features-item__header features-item__header--blue">
-          <h2>Настоящий городок</h2>
-          <span>&#8211; №1 &#8211;</span>
-          <p>Седона не атракцион для туристов, там течет своя жизнь</p>
+      <div class="feature feature--first">
+        <header class="feature__header feature__header--blue">
+          <h2 class="feature__title">Настоящий городок</h2>
+          <div class="feature__number"> №1 </div>
+          <div class="feature__text">Седона не атракцион для туристов, там течет своя жизнь</div>
         </header>
-        <div class="features-item__photo">
-          <img src="http://placehold.it/320x260" alt="">
+        <div class="feature__photo">
+          <img class="feature__img" src="http://divlacehold.it/320x260" alt="">
         </div>
-        <ul class="features-item__list">
-          <li class="features-item__subitem">
-            <h3>Жилье</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        <ul class="benefits">
+          <li class="benefit">
+            <h3 class="benefit__title">Жилье</h3>
+            <div class="benefit_text">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
           </li>
-          <li class="features-item__subitem">
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
+          <li class="benefit">
+            <h3 class="benefit__title">Сувениры</h3>
+            <div class="benefit__text">Не только китайского, но и местного производства!</div>
           </li>
-          <li class="features-item__subitem">
-            <h3>Еда</h3>
-            <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          <li class="benefit">
+            <h3 class="benefit__title">Еда</h3>
+            <div class="benefit__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</div>
           </li>
         </ul>
       </div>
-      <div class="features-item">
-        <header class="features-item__header features-item__header--blue">
-          <h2>Там есть мост дьявола</h2>
-          <span>&#8211; №2 &#8211;</span>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+      <div class="feature">
+        <header class="feature__header feature__header--blue">
+          <h2 class="feature__title">Там есть мост дьявола</h2>
+          <div class="feature__number"> №2 </div>
+          <div class="feature__text">Да, по нему можно пройти! Если конечно вы осмелитесь</div>
         </header>
-        <div class="features-item__photo">
-          <img src="http://placehold.it/320x260" alt="">
+        <div class="feature__photo">
+          <img class="feature__img" src="http://divlacehold.it/320x260" alt="">
         </div>
       </div>
-      <div class="features-item">
-        <header class="features-item__header features-item__header--grey">
-          <h2>Небольшая площадь</h2>
-          <span>&#8211; №3 &#8211;</span>
-          <p>ВСЕ достопримечательности находятся очень близко</p>
+      <div class="feature">
+        <header class="feature__header feature__header--grey">
+          <h2 class="feature__title">Небольшая площадь</h2>
+          <div class="feature__number"> №3 </div>
+          <div class="feature__text">ВСЕ достопримечательности находятся очень близко</div>
         </header>
       </div>
-      <div class="features-item">
-        <header class="features-item__header features-item__header--grey">
-          <h2>Красивая дорога</h2>
-          <span>&#8211; №4 &#8211;</span>
-          <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+      <div class="feature">
+        <header class="feature__header feature__header--grey">
+          <h2 class="feature__title">Красивая дорога</h2>
+          <div class="feature__number"> №4 </div>
+          <div class="feature__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</div>
         </header>
       </div>
-      <div class="features-item">
-        <header class="features-item__header features-item__header--grey">
-          <h2>Мало туристов</h2>
-          <span>&#8211; №5 &#8211;</span>
-          <p>Большинство едет в гранд каньон и толпится там</p>
+      <div class="feature">
+        <header class="feature__header feature__header--grey">
+          <h2 class="feature__title">Мало туристов</h2>
+          <div class="feature__number"> №5 </div>
+          <div class="feature__text">Большинство едет в гранд каньон и толпится там</div>
         </header>
       </div>
     </section>
 
     <div class="booking">
-      <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-      <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <a class="btn" href="#">Найти гостиницу</a>
+      <h2 class="booking__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+      <p class="booking__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <a class="btn booking__btn" href="#">Найти гостиницу</a>
     </div>
 
     <div class="map">
-      <img src="http://placehold.it/320x350" alt="">
+      <img class="map__img" src="http://placehold.it/320x350" alt="">
     </div>
 
-    <footer class="page-footer">
-      <p class="page-footer__twit">#VISITSEDONA</p>
-      <p class="page-footer__social">
-        <span class="social-links">
-          <a class="social-link social-link--twit" href="#">Twitter</a>
-          <a class="social-link social-link--fb" href="#">Facebook</a>
-          <a class="social-link social-link--youtube" href="#">Youtube</a>
-        </span>
-      </p>
-      <p class="page-footer__copyright">
+    <footer class="footer">
+      <p class="footer__twit">#VISITSEDONA</p>
+      <div class="social">
+          <a class="social__link social__link--twit" href="#">Twitter</a>
+          <a class="social__link social__link--fb" href="#">Facebook</a>
+          <a class="social__link social__link--youtube" href="#">Youtube</a>
+      </div>
+      <p class="footer__copyright">
         Разработано:
-        <a class="btn page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </p>
     </footer>
   </body>
