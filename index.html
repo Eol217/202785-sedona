@@ -22,6 +22,7 @@
         </div>
       </nav>
     </header>
+
     <div class="intro">
       <div class="intro__promo intro__promo--main">
           <img class="intro__svg-title" src="http://placehold.it/282x214" alt="">
@@ -99,6 +100,88 @@
     <div class="map">
       <img class="map__img" src="http://placehold.it/320x350" alt="">
     </div>
+
+<hr>
+    <!--Начало основного содержания form.html-->
+
+    <div class="intro intro--secondary">
+      <div class="intro__promo intro__promo--secondary">
+          <img class="intro__svg-title intro__svg-title--secondary" src="http://placehold.it/282x214" alt="">
+      </div>
+      <div class="intro__description intro__description--secondary">
+        <h2 class="intro__title intro__title--secondary">Оставьте свой отзыв</h2>
+        <p class="intro__text intro__text--secondary">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+    </div>
+
+    <form class="feedback-form" name="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+      <fieldset class="feedback-form__fieldset">
+        <legend class="feedback-form__legend">Представьтесь, пожалуйста</legend>
+        <label class="feedback-form__label feedback-form__label--thin">
+          Имя:
+          <input class="feedback-form__input" name="firstname" type="text" placeholder="Петр">
+        </label>
+        <label class="feedback-form__label feedback-form__label--thin">
+          Фамилия:
+          <input class="feedback-form__input" name="surname" type="text" placeholder="Иванов">
+        </label>
+        <label class="feedback-form__label feedback-form__label--thin">
+          Отчество:
+          <input class="feedback-form__input" name="patronymic" type="text" placeholder="Александрович">
+        </label>
+      </fieldset>
+      <fieldset class="feedback-form__fieldset">
+        <legend class="feedback-form__legend">Контактная информация</legend>
+        <label class="feedback-form__label feedback-form__label--thin">
+          Контактный телефон:
+          <input class="feedback-form__input feedback-form__input--tel" name="tel"" type="tel" placeholder="Введите телефон">
+        </label>
+        <div class="feedback-form__error">Ошибка, перепроверьте номер</div>
+        <label class="feedback-form__label feedback-form__label--thin">
+          Электронная почта:
+          <input class="feedback-form__input feedback-form__input--email" name="email" type="email" placeholder="Введите e-mail">
+        </label>
+      </fieldset>
+      <fieldset class="feedback-form__fieldset">
+        <legend class="feedback-form__legend">Ваше общее впечатление:</legend>
+        <label class="feedback-form__label feedback-form__label--thik">
+          <input class="feedback-form__input feedback-form__input--radio"  name="impression" type="radio" value="1" checked>
+          Скорее положительное
+        </label>
+        <label class="feedback-form__label feedback-form__label--thik">
+          <input class="feedback-form__input feedback-form__input--radio"  name="impression" type="radio" value="2">
+          Скорее отрицательное
+        </label>
+        <label class="feedback-form__label feedback-form__label--thik">
+          <input class="feedback-form__input feedback-form__input--radio" name="impression" type="radio" value="3">
+          Затрудняюсь ответить
+        </label>
+      </fieldset>
+      <fieldset class="feedback-form__fieldset">
+        <legend class="feedback-form__legend">Посещенные достопримечательности:</legend>
+        <label class="feedback-form__label feedback-form__label--thik">
+          <input class="feedback-form__input feedback-form__input--checkbox" name="bridge" type="checkbox" checked>
+          Мост Дьявола
+        </label>
+        <label class="feedback-form__label feedback-form__label--thik">
+          <input class="feedback-form__input feedback-form__input--checkbox" name="park" type="checkbox" checked>
+          Слайд-парк
+        </label>
+       <label class="feedback-form__label feedback-form__label--thik">
+          <input class="feedback-form__input feedback-form__input--checkbox" name="mountain" type="checkbox">
+          Гора-Колокол
+        </label>
+        <label class="feedback-form__label feedback-form__label--thik">
+          <input class="feedback-form__input feedback-form__input--checkbox" name="rock" type="checkbox" checked>
+          Красные скалы
+        </label>
+      </fieldset>
+      <fieldset class="feedback-form__fieldset">
+        <legend class="feedback-form__legend">Опишите свои эмоции:</legend>
+        <textarea class="feedback-form__input feedback-form__input--textarea" name="comment" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+      </fieldset>
+      <a class="btn feedback-form__btn" href="#">Отправить отзыв</a>
+    </form>
 
     <footer class="footer">
       <p class="footer__twit">#VISITSEDONA</p>
