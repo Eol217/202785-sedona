@@ -1,0 +1,13 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+  width: 20rem;
+
+  font-family: "ptsans", "Arial", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}

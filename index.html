@@ -4,15 +4,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
-      <div class="header__logo">
-        <img class="header__logo-img" src="http://placehold.it/102x83" width="102" height="83" alt="City of Sedona">
-      </div>
       <h1 class="visually-hidden">Sedona "Because the Grand Canyon sucks!"</h1>
       <nav class="main-nav main-nav--closed">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <a class="nav-toggle nav-toggle--close">Закрыть меню</a>
         <div class="main-nav__wrapper">
           <menu class="main-nav__list">
             <a class="main-nav__item main-nav__item--active">Главная</a>
@@ -22,38 +20,44 @@
           </menu>
         </div>
       </nav>
+      <div class="header__bar">
+        <img class="header__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
+        <a class="nav-toggle nav-toggle--open">Открыть меню</a>
+      </div>
     </header>
+
     <div class="intro">
       <div class="intro__promo intro__promo--main">
-          <img class="intro__svg-title" src="http://placehold.it/282x214" alt="">
+          <img class="intro__svg-title" src="img/text-sedona-index.svg" width="282" height="214" alt="">
       </div>
       <div class="intro__description">
-        <h2 class="intro__title">СЕДОНА — небольшой городок в Аризоне, заслувающий большего!</h2>
+        <h2 class="intro__title">СЕДОНА&nbsp;&mdash; НЕБОЛЬШОЙ ГОРОДОК В&nbsp;АРИЗОНЕ, ЗАСЛУВАЮЩИЙ БОЛЬШЕГО!</h2>
         <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
       </div>
     </div>
+
     <section class="features">
-      <div class="feature feature--first">
-        <header class="feature__header feature__header--blue">
+      <div class="feature">
+        <header class="feature__header feature__header--first feature__header--blue">
           <h2 class="feature__title">Настоящий городок</h2>
           <div class="feature__number"> №1 </div>
           <div class="feature__text">Седона не атракцион для туристов, там течет своя жизнь</div>
         </header>
         <div class="feature__photo">
-          <img class="feature__img" src="http://divlacehold.it/320x260" alt="">
+          <img class="feature__img" src="img/photo-city@1x.jpg" alt="">
         </div>
         <ul class="benefits">
-          <li class="benefit">
-            <h3 class="benefit__title">Жилье</h3>
-            <div class="benefit_text">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
+          <li class="benefits__item">
+            <h3 class="benefits__title">Жилье</h3>
+            <div class="benefits__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
           </li>
-          <li class="benefit">
-            <h3 class="benefit__title">Сувениры</h3>
-            <div class="benefit__text">Не только китайского, но и местного производства!</div>
+          <li class="benefits__item">
+            <h3 class="benefits__title">Сувениры</h3>
+            <div class="benefits__text">Не только китайского, но и местного производства!</div>
           </li>
-          <li class="benefit">
-            <h3 class="benefit__title">Еда</h3>
-            <div class="benefit__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</div>
+          <li class="benefits__item">
+            <h3 class="benefits__title">Еда</h3>
+            <div class="benefits__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</div>
           </li>
         </ul>
       </div>
@@ -64,7 +68,7 @@
           <div class="feature__text">Да, по нему можно пройти! Если конечно вы осмелитесь</div>
         </header>
         <div class="feature__photo">
-          <img class="feature__img" src="http://divlacehold.it/320x260" alt="">
+          <img class="feature__img" src="img/photo-bridge@1x.jpg" alt="">
         </div>
       </div>
       <div class="feature">
@@ -95,7 +99,7 @@
       <a class="btn booking__btn" href="#">Найти гостиницу</a>
     </div>
     <div class="map">
-      <img class="map__img" src="http://placehold.it/320x350" alt="">
+      <img class="map__img" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="">
     </div>
     <hr>
     <!--Начало основного содержания form.html-->
@@ -238,7 +242,7 @@
     </div>
 
     <div class="video">
-      <div class="video_description">
+      <div class="video__description">
         <h2 class="video__title">Все еще сомневаетесь?</h2>
         <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       </div>

@@ -1,0 +1,32 @@
+.intro__promo {
+  padding: 5.625rem 1.25rem 5.375rem;
+  height: 24.375rem;
+
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
+}
+
+.intro__svg-title {
+  display: block;
+}
+
+.intro__description {
+  margin-top: 2.625rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  line-height: $line-height__primary;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $color__text;
+  background-color: white;
+}
+
+.intro__title {
+  font-size: $font-size__title;
+  font-family: "ptsansbold", "Arial", sans-serif;
+}
+
+.intro__text {
+  font-size: $font-size__text;
+}
