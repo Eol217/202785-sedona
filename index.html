@@ -108,80 +108,80 @@
     <!--Начало основного содержания form.html-->
     <div class="intro intro--secondary">
       <div class="intro__promo intro__promo--secondary">
-          <img class="intro__svg-title intro__svg-title--secondary" src="http://placehold.it/282x214" alt="">
+          <img class="intro__svg-title intro__svg-title--secondary" src="img/text-sedona.svg" width="229" height="39" alt="">
       </div>
       <div class="intro__description intro__description--secondary">
         <h2 class="intro__title intro__title--secondary">Оставьте свой отзыв</h2>
         <p class="intro__text intro__text--secondary">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
     </div>
-    <form class="feedback-form" name="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
-      <fieldset class="feedback-form__fieldset">
-        <legend class="feedback-form__legend">Представьтесь, пожалуйста</legend>
-        <label class="feedback-form__label feedback-form__label--thin">
+    <form class="feedback" name="feedback" action="https://echo.htmlacademy.ru" method="POST">
+      <div class="feedback__fieldset">
+        <div class="feedback__legend">Представьтесь, пожалуйста</div>
+        <label class="feedback__label">
           Имя:
-          <input class="feedback-form__input" name="firstname" type="text" placeholder="Петр">
+          <input class="feedback__input" name="firstname" type="text" placeholder="Петр">
         </label>
-        <label class="feedback-form__label feedback-form__label--thin">
+        <label class="feedback__label">
           Фамилия:
-          <input class="feedback-form__input" name="surname" type="text" placeholder="Иванов">
+          <input class="feedback__input" name="surname" type="text" placeholder="Иванов">
         </label>
-        <label class="feedback-form__label feedback-form__label--thin">
+        <label class="feedback__label">
           Отчество:
-          <input class="feedback-form__input" name="patronymic" type="text" placeholder="Александрович">
+          <input class="feedback__input" name="patronymic" type="text" placeholder="Александрович">
         </label>
-      </fieldset>
-      <fieldset class="feedback-form__fieldset">
-        <legend class="feedback-form__legend">Контактная информация</legend>
-        <label class="feedback-form__label feedback-form__label--thin">
+      </div>
+      <div class="feedback__fieldset">
+        <div class="feedback__legend">Контактная информация</div>
+        <label class="feedback__label">
           Контактный телефон:
-          <input class="feedback-form__input feedback-form__input--tel" name="tel" type="tel" placeholder="Введите телефон">
+          <input class="feedback__input feedback__input--tel" name="tel" type="tel" placeholder="Введите телефон">
         </label>
-        <div class="feedback-form__error">Ошибка, перепроверьте номер</div>
-        <label class="feedback-form__label feedback-form__label--thin">
+        <div class="feedback__error">Ошибка, перепроверьте номер</div>
+        <label class="feedback__label ">
           Электронная почта:
-          <input class="feedback-form__input feedback-form__input--email" name="email" type="email" placeholder="Введите e-mail">
+          <input class="feedback__input feedback__input--email" name="email" type="email" placeholder="Введите e-mail">
         </label>
-      </fieldset>
-      <fieldset class="feedback-form__fieldset">
-        <legend class="feedback-form__legend">Ваше общее впечатление:</legend>
-        <label class="feedback-form__label feedback-form__label--thik">
-          <input class="feedback-form__input feedback-form__input--radio"  name="impression" type="radio" value="1" checked>
+      </div>
+      <div class="feedback__fieldset">
+        <div class="feedback__legend">Ваше общее впечатление:</div>
+        <label class="feedback__choose">
+          <input class="feedback__radio"  name="impression" type="radio" value="1" checked>
           Скорее положительное
         </label>
-        <label class="feedback-form__label feedback-form__label--thik">
-          <input class="feedback-form__input feedback-form__input--radio"  name="impression" type="radio" value="2">
+        <label class="feedback__choose">
+          <input class="feedback__radio"  name="impression" type="radio" value="2">
           Скорее отрицательное
         </label>
-        <label class="feedback-form__label feedback-form__label--thik">
-          <input class="feedback-form__input feedback-form__input--radio" name="impression" type="radio" value="3">
+        <label class="feedback__choose">
+          <input class="feedback__radio" name="impression" type="radio" value="3">
           Затрудняюсь ответить
         </label>
-      </fieldset>
-      <fieldset class="feedback-form__fieldset">
-        <legend class="feedback-form__legend">Посещенные достопримечательности:</legend>
-        <label class="feedback-form__label feedback-form__label--thik">
-          <input class="feedback-form__input feedback-form__input--checkbox" name="bridge" type="checkbox" checked>
+      </div>
+      <div class="feedback__fieldset">
+        <div class="feedback__legend">Посещенные достопримечательности:</div>
+        <label class="feedback__choose feedback__choose--checkbox">
+          <input class="feedback__checkbox" name="bridge" type="checkbox" checked>
           Мост Дьявола
         </label>
-        <label class="feedback-form__label feedback-form__label--thik">
-          <input class="feedback-form__input feedback-form__input--checkbox" name="park" type="checkbox" checked>
+        <label class="feedback__choose feedback__choose--checkbox">
+          <input class="feedback__checkbox" name="park" type="checkbox" checked>
           Слайд-парк
         </label>
-        <label class="feedback-form__label feedback-form__label--thik">
-          <input class="feedback-form__input feedback-form__input--checkbox" name="mountain" type="checkbox">
+        <label class="feedback__choose feedback__choose--checkbox">
+          <input class="feedback__checkbox" name="mountain" type="checkbox">
           Гора-Колокол
         </label>
-        <label class="feedback-form__label feedback-form__label--thik">
-          <input class="feedback-form__input feedback-form__input--checkbox" name="rock" type="checkbox" checked>
+        <label class="feedback__choose feedback__choose--checkbox">
+          <input class="feedback__checkbox" name="rock" type="checkbox" checked>
           Красные скалы
         </label>
-      </fieldset>
-      <fieldset class="feedback-form__fieldset">
-        <legend class="feedback-form__legend">Опишите свои эмоции:</legend>
-        <textarea class="feedback-form__input feedback-form__input--textarea" name="comment" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
-      </fieldset>
-      <a class="btn feedback-form__btn" href="#">Отправить отзыв</a>
+      </div>
+      <div class="feedback__fieldset">
+        <div class="feedback__legend">Опишите свои эмоции:</div>
+        <textarea class="feedback__input feedback__input--textarea" name="comment" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+      </div>
+      <a class="btn feedback__btn" href="#">Отправить отзыв</a>
     </form>
 
     <hr>
@@ -189,7 +189,7 @@
 
     <div class="intro intro--secondary">
       <div class="intro__promo intro__promo--secondary">
-          <img class="intro__svg-title intro__svg-title--secondary" src="http://placehold.it/282x214" alt="">
+          <img class="intro__svg-title intro__svg-title--secondary" src="img/text-sedona.svg" width="229" height="39" alt="">
       </div>
       <div class="intro__description intro__description--secondary">
         <h2 class="intro__title intro__title--secondary">Фото и видео</h2>
@@ -199,7 +199,7 @@
 
     <div class="photos">
       <div class="photo">
-        <img class="photo__preview" src="http://placehold.it/280x280" alt="">
+        <img class="photo__preview" src="img/photo-1-mobile@1x.jpg" alt="">
         <div class="photo__info">
           <h2 class="photo__title">Неродные просторы</h2>
           <p class="photo__author">Автор фото: Борис</p>
@@ -210,7 +210,7 @@
         </div>
       </div>
       <div class="photo">
-        <img class="photo__preview" src="http://placehold.it/280x280" alt="">
+        <img class="photo__preview" src="img/photo-2-mobile@1x.jpg" alt="">
         <div class="photo__info">
           <h2 class="photo__title">Местная растительность</h2>
           <p class="photo__author">Автор фото: Сергей</p>
@@ -221,7 +221,7 @@
         </div>
       </div>
       <div class="photo">
-        <img class="photo__preview" src="http://placehold.it/280x280" alt="">
+        <img class="photo__preview" src="img/photo-3-mobile@1x.jpg" alt="">
         <div class="photo__info">
           <h2 class="photo__title">Дорога на север</h2>
           <p class="photo__author">Автор фото: Петр</p>
@@ -232,7 +232,7 @@
         </div>
       </div>
       <div class="photo">
-        <img class="photo__preview" src="http://placehold.it/280x280" alt="">
+        <img class="photo__preview" src="img/photo-4-mobile@1x.jpg" alt="">
         <div class="photo__info">
           <h2 class="photo__title">Мост дьявола</h2>
           <p class="photo__author">Автор фото: Антон</p>
@@ -250,7 +250,7 @@
         <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       </div>
       <div class="video__frame">
-        <img class="video__preview" src="http://placehold.it/320x201" alt="">
+        <img class="video__preview" src="img/video-mobile@1x.jpg" alt="">
       </div>
       <div class="video__controls">
         <div class="video__controls-top">

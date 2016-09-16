@@ -1,9 +1,10 @@
-@import "normalize.css";
 @import "font.css";
+@import "normalize.css";
 @import "utils/variables.css";
 @import "utils/mixins.css";
 @import "global.css";
 
+@import "blocks/btn.css";
 @import "blocks/nav-toggle.css";
 @import "blocks/header.css";
 @import "blocks/visually-hidden.css";
@@ -12,3 +13,4 @@
 @import "blocks/feature.css";
 @import "blocks/benefits.css";
 @import "blocks/booking.css";
+@import "blocks/feedback.css";
