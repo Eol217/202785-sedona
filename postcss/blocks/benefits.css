@@ -14,11 +14,12 @@
 .benefits__title {
   margin-top: 0;
   font-size: $font-size__title;
-  line-height: $line-height__primary;
   font-family: "ptsansbold", "Arial", sans-serif;
 }
 
 .benefits__text {
   font-size: $font-size__text;
   line-height: $line-height__text;
+
+  color: hsl(0, 0%, 20%);
 }

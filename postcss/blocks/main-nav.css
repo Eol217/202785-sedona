@@ -9,8 +9,6 @@
   font-size: $font-size__title;
   line-height: $line-height__menu;
   font-family: "ptsansbold", "Arial", sans-serif;
-  text-align: center;
-  text-transform: uppercase;
   text-decoration: none;
 
   color: white;
@@ -28,8 +26,8 @@
   right: 1rem;
 
   display: block;
-  width: 1em;
-  height: 1em;
+  width: 1rem;
+  height: 1rem;
 
   font-size: 0;
 }
