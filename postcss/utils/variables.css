@@ -1,6 +1,7 @@
 $color__primary: hsl(203, 47%, 66%);
 $color__text: hsl(0, 0%, 0%);
-$color__text--grey: hsl(0, 0%, 20%);
+$color__text--grey: color($color__text l(20%));
+$color__bg-grey: color($color__text l(93%));
 $color__text--error: hsl(0, 100%, 68%);
 $color__input-bg: color($color__text a(95%)); /*верно ли это значение?*/
 

@@ -14,12 +14,11 @@ color: white;
 
 .feature__header--grey {
   color: black;
-  background-color: #eeeeee;
+  background-color: $color__bg-grey;
 }
 
 .feature__title {
   font-size: $font-size__title;
-  font-family: "ptsansbold", "Arial", sans-serif;
 }
 
 .feature__number {
@@ -35,7 +34,7 @@ color: white;
 
 .feature__text--grey,
 .feature__number--grey {
-  color: hsl(0, 0%, 20%);
+  color: $color__text--grey;
 }
 
 .feature__photo {

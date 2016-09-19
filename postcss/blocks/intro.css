@@ -28,14 +28,13 @@
 
 .intro__title {
   font-size: $font-size__title;
-  font-family: "ptsansbold", "Arial", sans-serif;
 }
 
 .intro__text {
   margin-top: 1.9rem;
   font-size: $font-size__text;
 
-  color: hsl(0, 0%, 20%);
+  color: $color__text--grey;
 }
 
 .intro__text--secondary {
