@@ -115,9 +115,10 @@
         <p class="intro__text intro__text--secondary">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
     </div>
+
     <form class="feedback" name="feedback" action="https://echo.htmlacademy.ru" method="POST">
       <div class="feedback__fieldset">
-        <div class="feedback__legend">Представьтесь, пожалуйста</div>
+        <h2 class="feedback__title">Представьтесь, пожалуйста:</h2>
         <label class="feedback__label">
           Имя:
           <input class="feedback__input" name="firstname" type="text" placeholder="Петр">
@@ -132,7 +133,7 @@
         </label>
       </div>
       <div class="feedback__fieldset">
-        <div class="feedback__legend">Контактная информация</div>
+        <h2 class="feedback__title">Контактная информация:</h2>
         <label class="feedback__label">
           Контактный телефон:
           <input class="feedback__input feedback__input--tel" name="tel" type="tel" placeholder="Введите телефон">
@@ -144,7 +145,7 @@
         </label>
       </div>
       <div class="feedback__fieldset">
-        <div class="feedback__legend">Ваше общее впечатление:</div>
+        <h2 class="feedback__title">Ваше общее впечатление:</h2>
         <label class="feedback__choose">
           <input class="feedback__radio"  name="impression" type="radio" value="1" checked>
           Скорее положительное
@@ -159,7 +160,7 @@
         </label>
       </div>
       <div class="feedback__fieldset">
-        <div class="feedback__legend">Посещенные достопримечательности:</div>
+        <h2 class="feedback__title">Посещенные достопримечательности:</h2>
         <label class="feedback__choose feedback__choose--checkbox">
           <input class="feedback__checkbox" name="bridge" type="checkbox" checked>
           Мост Дьявола
@@ -178,8 +179,8 @@
         </label>
       </div>
       <div class="feedback__fieldset">
-        <div class="feedback__legend">Опишите свои эмоции:</div>
-        <textarea class="feedback__input feedback__input--textarea" name="comment" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+        <h2 class="feedback__title">Опишите свои эмоции:</h2>
+        <textarea class="feedback__input feedback__input--textarea" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
       </div>
       <a class="btn feedback__btn" href="#">Отправить отзыв</a>
     </form>
@@ -267,15 +268,17 @@
     </div>
 
     <footer class="footer">
-      <p class="footer__twit">#VISITSEDONA</p>
+      <a class="footer__twit">#VISITSEDONA</a>
       <div class="social">
           <a class="social__link social__link--twit" href="#">Twitter</a>
           <a class="social__link social__link--fb" href="#">Facebook</a>
           <a class="social__link social__link--youtube" href="#">Youtube</a>
       </div>
       <p class="footer__copyright">
-        Разработано:
-        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        Разработано
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="">
+        </a>
       </p>
     </footer>
   </body>

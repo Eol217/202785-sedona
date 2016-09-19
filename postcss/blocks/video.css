@@ -1,0 +1,16 @@
+.video__description {
+  padding: 1.5rem 2.3rem;
+
+  border-top: 1px solid $color__bg-grey;
+}
+
+.video__title {
+  font-size: $font-size__title;
+}
+
+.video__text {
+  font-size: $font-size__text;
+  line-height: $line-height__text--secondary;
+
+  color: $color__text--grey;
+}

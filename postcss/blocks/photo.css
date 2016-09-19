@@ -1,0 +1,28 @@
+.photo {
+  padding: 1.375rem 1.25rem;
+
+  border-top: 1px solid $color__bg-grey;
+}
+
+.photo__info {
+  margin-top: 1.25rem;
+
+  font-size: $font-size__text;
+  line-height: $line-height__text--secondary;
+  text-align: left;
+}
+
+.photo__title {
+  margin: 0;
+  padding: 0;
+}
+
+.photo__author {
+  text-transform: none;
+}
+
+.photo__like-counter {
+  padding-left: 1rem;
+
+  font-weight: bold;
+}
