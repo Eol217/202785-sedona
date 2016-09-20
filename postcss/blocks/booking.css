@@ -1,0 +1,18 @@
+.booking {
+  padding: 1.862rem 1.25rem 3.125rem;
+}
+
+.booking__title {
+  margin-top: 0;
+
+  font-size: $font-size__title--secondary;
+}
+
+.booking__text {
+  margin-bottom: 2.223rem;
+
+  font-size: $font-size__text;
+  line-height: $line-height__text--secondary;
+
+  color: $color__text--grey;
+}

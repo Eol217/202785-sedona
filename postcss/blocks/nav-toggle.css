@@ -1,0 +1,21 @@
+.nav-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+
+  display: block;
+  width: 1.375rem;
+  height: 1.375rem  ;
+
+  font-size: 0;
+
+  cursor: pointer;
+}
+
+.nav-toggle--open {
+  background: url("../img/icon-menu.svg") no-repeat;
+}
+
+.nav-toggle--close {
+  background: url("../img/icon-cross.svg") no-repeat;
+}

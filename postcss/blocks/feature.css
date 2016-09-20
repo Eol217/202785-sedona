@@ -1,0 +1,49 @@
+.feature__header {
+padding: 2.75rem 2rem 2.75rem;
+
+color: white;
+}
+
+.feature__header--first {
+  padding-top: 3.75rem;
+}
+
+.feature__header--blue {
+  background-color: $color__primary;
+}
+
+.feature__header--grey {
+  color: black;
+  background-color: $color__bg-grey;
+}
+
+.feature__title {
+  font-size: $font-size__title;
+}
+
+.feature__number {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.feature__text,
+.feature__number {
+  font-size: $font-size__text;
+  line-height: $line-height__text;
+}
+
+.feature__text--grey,
+.feature__number--grey {
+  color: $color__text--grey;
+}
+
+.feature__photo {
+  height: 16.25rem;
+  overflow: hidden;
+}
+
+.feature__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

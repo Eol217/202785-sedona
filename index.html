@@ -4,15 +4,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
-      <div class="header__logo">
-        <img class="header__logo-img" src="http://placehold.it/102x83" width="102" height="83" alt="City of Sedona">
-      </div>
       <h1 class="visually-hidden">Sedona "Because the Grand Canyon sucks!"</h1>
       <nav class="main-nav main-nav--closed">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <a class="nav-toggle nav-toggle--close">Закрыть меню</a>
         <div class="main-nav__wrapper">
           <menu class="main-nav__list">
             <a class="main-nav__item main-nav__item--active">Главная</a>
@@ -22,38 +20,44 @@
           </menu>
         </div>
       </nav>
+      <div class="header__bar">
+        <img class="header__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
+        <a class="nav-toggle nav-toggle--open">Открыть меню</a>
+      </div>
     </header>
+
     <div class="intro">
       <div class="intro__promo intro__promo--main">
-          <img class="intro__svg-title" src="http://placehold.it/282x214" alt="">
+          <img class="intro__svg-title" src="img/text-sedona-index.svg" width="282" height="214" alt="">
       </div>
       <div class="intro__description">
-        <h2 class="intro__title">СЕДОНА — небольшой городок в Аризоне, заслувающий большего!</h2>
+        <h2 class="intro__title">СЕДОНА&nbsp;&mdash; НЕБОЛЬШОЙ ГОРОДОК В&nbsp;АРИЗОНЕ, ЗАСЛУВАЮЩИЙ БОЛЬШЕГО!</h2>
         <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
       </div>
     </div>
+
     <section class="features">
-      <div class="feature feature--first">
-        <header class="feature__header feature__header--blue">
+      <div class="feature">
+        <header class="feature__header feature__header--first feature__header--blue">
           <h2 class="feature__title">Настоящий городок</h2>
           <div class="feature__number"> №1 </div>
           <div class="feature__text">Седона не атракцион для туристов, там течет своя жизнь</div>
         </header>
         <div class="feature__photo">
-          <img class="feature__img" src="http://divlacehold.it/320x260" alt="">
+          <img class="feature__img" src="img/photo-city@1x.jpg" alt="">
         </div>
         <ul class="benefits">
-          <li class="benefit">
-            <h3 class="benefit__title">Жилье</h3>
-            <div class="benefit_text">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
+          <li class="benefits__item">
+            <h3 class="benefits__title">Жилье</h3>
+            <div class="benefits__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
           </li>
-          <li class="benefit">
-            <h3 class="benefit__title">Сувениры</h3>
-            <div class="benefit__text">Не только китайского, но и местного производства!</div>
+          <li class="benefits__item">
+            <h3 class="benefits__title">Сувениры</h3>
+            <div class="benefits__text">Не только китайского, но и местного производства!</div>
           </li>
-          <li class="benefit">
-            <h3 class="benefit__title">Еда</h3>
-            <div class="benefit__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</div>
+          <li class="benefits__item">
+            <h3 class="benefits__title">Еда</h3>
+            <div class="benefits__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</div>
           </li>
         </ul>
       </div>
@@ -64,117 +68,121 @@
           <div class="feature__text">Да, по нему можно пройти! Если конечно вы осмелитесь</div>
         </header>
         <div class="feature__photo">
-          <img class="feature__img" src="http://divlacehold.it/320x260" alt="">
+          <img class="feature__img" src="img/photo-bridge@1x.jpg" alt="">
         </div>
       </div>
       <div class="feature">
         <header class="feature__header feature__header--grey">
           <h2 class="feature__title">Небольшая площадь</h2>
-          <div class="feature__number"> №3 </div>
-          <div class="feature__text">ВСЕ достопримечательности находятся очень близко</div>
+          <div class="feature__number feature__number--grey"> №3 </div>
+          <div class="feature__text feature__text--grey">ВСЕ достопримечательности находятся очень близко</div>
         </header>
       </div>
       <div class="feature">
         <header class="feature__header feature__header--grey">
           <h2 class="feature__title">Красивая дорога</h2>
-          <div class="feature__number"> №4 </div>
-          <div class="feature__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</div>
+          <div class="feature__number feature__number--grey"> №4 </div>
+          <div class="feature__text feature__text--grey">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</div>
         </header>
       </div>
       <div class="feature">
         <header class="feature__header feature__header--grey">
           <h2 class="feature__title">Мало туристов</h2>
-          <div class="feature__number"> №5 </div>
-          <div class="feature__text">Большинство едет в гранд каньон и толпится там</div>
+          <div class="feature__number feature__number--grey"> №5 </div>
+          <div class="feature__text feature__text--grey">Большинство едет в гранд каньон и толпится там</div>
         </header>
       </div>
     </section>
+
     <div class="booking">
       <h2 class="booking__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
       <p class="booking__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <a class="btn booking__btn" href="#">Найти гостиницу</a>
     </div>
+
     <div class="map">
-      <img class="map__img" src="http://placehold.it/320x350" alt="">
+      <img class="map__img" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="">
     </div>
+
     <hr>
     <!--Начало основного содержания form.html-->
     <div class="intro intro--secondary">
       <div class="intro__promo intro__promo--secondary">
-          <img class="intro__svg-title intro__svg-title--secondary" src="http://placehold.it/282x214" alt="">
+          <img class="intro__svg-title intro__svg-title--secondary" src="img/text-sedona.svg" width="229" height="39" alt="">
       </div>
       <div class="intro__description intro__description--secondary">
         <h2 class="intro__title intro__title--secondary">Оставьте свой отзыв</h2>
         <p class="intro__text intro__text--secondary">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
     </div>
-    <form class="feedback-form" name="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
-      <fieldset class="feedback-form__fieldset">
-        <legend class="feedback-form__legend">Представьтесь, пожалуйста</legend>
-        <label class="feedback-form__label feedback-form__label--thin">
+
+    <form class="feedback" name="feedback" action="https://echo.htmlacademy.ru" method="POST">
+      <div class="feedback__fieldset">
+        <h2 class="feedback__title">Представьтесь, пожалуйста:</h2>
+        <label class="feedback__label">
           Имя:
-          <input class="feedback-form__input" name="firstname" type="text" placeholder="Петр">
+          <input class="feedback__input" name="firstname" type="text" placeholder="Петр">
         </label>
-        <label class="feedback-form__label feedback-form__label--thin">
+        <label class="feedback__label">
           Фамилия:
-          <input class="feedback-form__input" name="surname" type="text" placeholder="Иванов">
+          <input class="feedback__input" name="surname" type="text" placeholder="Иванов">
         </label>
-        <label class="feedback-form__label feedback-form__label--thin">
+        <label class="feedback__label">
           Отчество:
-          <input class="feedback-form__input" name="patronymic" type="text" placeholder="Александрович">
+          <input class="feedback__input" name="patronymic" type="text" placeholder="Александрович">
         </label>
-      </fieldset>
-      <fieldset class="feedback-form__fieldset">
-        <legend class="feedback-form__legend">Контактная информация</legend>
-        <label class="feedback-form__label feedback-form__label--thin">
+      </div>
+      <div class="feedback__fieldset">
+        <h2 class="feedback__title">Контактная информация:</h2>
+        <label class="feedback__label">
           Контактный телефон:
-          <input class="feedback-form__input feedback-form__input--tel" name="tel" type="tel" placeholder="Введите телефон">
+          <input class="feedback__input feedback__input--tel" name="tel" type="tel" placeholder="Введите телефон">
         </label>
-        <div class="feedback-form__error">Ошибка, перепроверьте номер</div>
-        <label class="feedback-form__label feedback-form__label--thin">
+        <div class="feedback__error">Ошибка, перепроверьте номер</div>
+        <label class="feedback__label ">
           Электронная почта:
-          <input class="feedback-form__input feedback-form__input--email" name="email" type="email" placeholder="Введите e-mail">
+          <input class="feedback__input feedback__input--email" name="email" type="email" placeholder="Введите e-mail">
         </label>
-      </fieldset>
-      <fieldset class="feedback-form__fieldset">
-        <legend class="feedback-form__legend">Ваше общее впечатление:</legend>
-        <label class="feedback-form__label feedback-form__label--thik">
-          <input class="feedback-form__input feedback-form__input--radio"  name="impression" type="radio" value="1" checked>
+      </div>
+      <div class="feedback__fieldset">
+        <h2 class="feedback__title">Ваше общее впечатление:</h2>
+        <label class="feedback__choose">
+          <input class="feedback__radio"  name="impression" type="radio" value="1" checked>
           Скорее положительное
         </label>
-        <label class="feedback-form__label feedback-form__label--thik">
-          <input class="feedback-form__input feedback-form__input--radio"  name="impression" type="radio" value="2">
+        <label class="feedback__choose">
+          <input class="feedback__radio"  name="impression" type="radio" value="2">
           Скорее отрицательное
         </label>
-        <label class="feedback-form__label feedback-form__label--thik">
-          <input class="feedback-form__input feedback-form__input--radio" name="impression" type="radio" value="3">
+        <label class="feedback__choose">
+          <input class="feedback__radio" name="impression" type="radio" value="3">
           Затрудняюсь ответить
         </label>
-      </fieldset>
-      <fieldset class="feedback-form__fieldset">
-        <legend class="feedback-form__legend">Посещенные достопримечательности:</legend>
-        <label class="feedback-form__label feedback-form__label--thik">
-          <input class="feedback-form__input feedback-form__input--checkbox" name="bridge" type="checkbox" checked>
+      </div>
+      <div class="feedback__fieldset">
+        <h2 class="feedback__title">Посещенные достопримечательности:</h2>
+        <label class="feedback__choose feedback__choose--checkbox">
+          <input class="feedback__checkbox" name="bridge" type="checkbox" checked>
           Мост Дьявола
         </label>
-        <label class="feedback-form__label feedback-form__label--thik">
-          <input class="feedback-form__input feedback-form__input--checkbox" name="park" type="checkbox" checked>
+        <label class="feedback__choose feedback__choose--checkbox">
+          <input class="feedback__checkbox" name="park" type="checkbox" checked>
           Слайд-парк
         </label>
-        <label class="feedback-form__label feedback-form__label--thik">
-          <input class="feedback-form__input feedback-form__input--checkbox" name="mountain" type="checkbox">
+        <label class="feedback__choose feedback__choose--checkbox">
+          <input class="feedback__checkbox" name="mountain" type="checkbox">
           Гора-Колокол
         </label>
-        <label class="feedback-form__label feedback-form__label--thik">
-          <input class="feedback-form__input feedback-form__input--checkbox" name="rock" type="checkbox" checked>
+        <label class="feedback__choose feedback__choose--checkbox">
+          <input class="feedback__checkbox" name="rock" type="checkbox" checked>
           Красные скалы
         </label>
-      </fieldset>
-      <fieldset class="feedback-form__fieldset">
-        <legend class="feedback-form__legend">Опишите свои эмоции:</legend>
-        <textarea class="feedback-form__input feedback-form__input--textarea" name="comment" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
-      </fieldset>
-      <a class="btn feedback-form__btn" href="#">Отправить отзыв</a>
+      </div>
+      <div class="feedback__fieldset">
+        <h2 class="feedback__title">Опишите свои эмоции:</h2>
+        <textarea class="feedback__input feedback__input--textarea" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+      </div>
+      <a class="btn feedback__btn" href="#">Отправить отзыв</a>
     </form>
 
     <hr>
@@ -182,7 +190,7 @@
 
     <div class="intro intro--secondary">
       <div class="intro__promo intro__promo--secondary">
-          <img class="intro__svg-title intro__svg-title--secondary" src="http://placehold.it/282x214" alt="">
+          <img class="intro__svg-title intro__svg-title--secondary" src="img/text-sedona.svg" width="229" height="39" alt="">
       </div>
       <div class="intro__description intro__description--secondary">
         <h2 class="intro__title intro__title--secondary">Фото и видео</h2>
@@ -192,7 +200,7 @@
 
     <div class="photos">
       <div class="photo">
-        <img class="photo__preview" src="http://placehold.it/280x280" alt="">
+        <img class="photo__preview" src="img/photo-1-mobile@1x.jpg" alt="">
         <div class="photo__info">
           <h2 class="photo__title">Неродные просторы</h2>
           <p class="photo__author">Автор фото: Борис</p>
@@ -203,7 +211,7 @@
         </div>
       </div>
       <div class="photo">
-        <img class="photo__preview" src="http://placehold.it/280x280" alt="">
+        <img class="photo__preview" src="img/photo-2-mobile@1x.jpg" alt="">
         <div class="photo__info">
           <h2 class="photo__title">Местная растительность</h2>
           <p class="photo__author">Автор фото: Сергей</p>
@@ -214,7 +222,7 @@
         </div>
       </div>
       <div class="photo">
-        <img class="photo__preview" src="http://placehold.it/280x280" alt="">
+        <img class="photo__preview" src="img/photo-3-mobile@1x.jpg" alt="">
         <div class="photo__info">
           <h2 class="photo__title">Дорога на север</h2>
           <p class="photo__author">Автор фото: Петр</p>
@@ -225,7 +233,7 @@
         </div>
       </div>
       <div class="photo">
-        <img class="photo__preview" src="http://placehold.it/280x280" alt="">
+        <img class="photo__preview" src="img/photo-4-mobile@1x.jpg" alt="">
         <div class="photo__info">
           <h2 class="photo__title">Мост дьявола</h2>
           <p class="photo__author">Автор фото: Антон</p>
@@ -238,12 +246,12 @@
     </div>
 
     <div class="video">
-      <div class="video_description">
+      <div class="video__description">
         <h2 class="video__title">Все еще сомневаетесь?</h2>
         <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       </div>
       <div class="video__frame">
-        <img class="video__preview" src="http://placehold.it/320x201" alt="">
+        <img class="video__preview" src="img/video-mobile@1x.jpg" alt="">
       </div>
       <div class="video__controls">
         <div class="video__controls-top">
@@ -260,15 +268,17 @@
     </div>
 
     <footer class="footer">
-      <p class="footer__twit">#VISITSEDONA</p>
+      <a class="footer__twit">#VISITSEDONA</a>
       <div class="social">
           <a class="social__link social__link--twit" href="#">Twitter</a>
           <a class="social__link social__link--fb" href="#">Facebook</a>
           <a class="social__link social__link--youtube" href="#">Youtube</a>
       </div>
       <p class="footer__copyright">
-        Разработано:
-        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        Разработано
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="">
+        </a>
       </p>
     </footer>
   </body>

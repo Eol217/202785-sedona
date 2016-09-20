@@ -1,0 +1,9 @@
+.social__link {
+  display: inline-block;
+  width: 2.875rem;
+  height: 3rem;
+
+  font-size: 0;
+
+  background-color: $color__primary;
+}

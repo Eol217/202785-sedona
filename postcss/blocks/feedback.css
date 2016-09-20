@@ -1,0 +1,49 @@
+.feedback {
+  padding: 0 1.25rem;
+}
+
+.feedback__fieldset {
+  padding-bottom: 0.4rem;
+
+  border-top: 1px solid $color__bg-grey;
+}
+
+.feedback__title {
+  font-size: $font-size__title;
+}
+
+.feedback__label {
+  display: flex;
+  margin-bottom: 1.25rem;
+
+  font-size: $font-size__text;
+
+  color: $color__text--grey;
+}
+
+.feedback__input {
+  margin-left: 1.25rem;
+  padding: 1.15rem 1.275rem;
+
+  font-size: $font-size__title;
+
+  color: $color__text--grey;
+  background-color: $color__bg-input;
+  border: 0;
+}
+
+.feedback__choose {
+  display: flex;
+  margin-bottom: 1.25rem;
+  padding-left: 5rem;
+}
+
+.feedback__radio,
+.feedback__checkbox {
+  display: none;
+}
+
+.feedback__btn {
+  margin-top: 3rem;
+}
+

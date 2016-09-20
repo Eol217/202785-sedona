@@ -1,0 +1,15 @@
+$color__primary: hsl(203, 47%, 66%);
+$color__text: hsl(0, 0%, 0%);
+$color__text--grey: color($color__text l(20%));
+$color__bg-grey: color($color__text l(90%));
+$color__text--error: hsl(0, 100%, 68%);
+$color__bg-input: color($color__text l(95%));
+
+$font-size__title: 1.125rem;
+$font-size__title--secondary: calc($font-size__title * 1.167);
+$font-size__text: calc($font-size__title * 0.778);
+
+$line-height__primary: calc($font-size__title * 1.444);
+$line-height__menu: calc($font-size__title * 2.222);
+$line-height__text: $font-size__title--secondary;
+$line-height__text--secondary: calc($font-size__title * 1.333);
