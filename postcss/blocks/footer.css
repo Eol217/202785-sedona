@@ -8,5 +8,9 @@
 }
 
 .footer__copyright {
+  display: flex;
+  justify-content: center;
+
   font-size: $font-size__text;
 }
+

@@ -19,3 +19,9 @@
 .nav-toggle--close {
   background: url("../img/icon-cross.svg") no-repeat;
 }
+
+@media (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
+}

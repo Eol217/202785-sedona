@@ -120,27 +120,27 @@
       <div class="feedback__fieldset">
         <h2 class="feedback__title">Представьтесь, пожалуйста:</h2>
         <label class="feedback__label">
-          Имя:
+          <span class="feedback__text">Имя:</span>
           <input class="feedback__input" name="firstname" type="text" placeholder="Петр">
         </label>
         <label class="feedback__label">
-          Фамилия:
+          <span class="feedback__text">Фамилия:</span>
           <input class="feedback__input" name="surname" type="text" placeholder="Иванов">
         </label>
         <label class="feedback__label">
-          Отчество:
+          <span class="feedback__text">Отчество:</span>
           <input class="feedback__input" name="patronymic" type="text" placeholder="Александрович">
         </label>
       </div>
       <div class="feedback__fieldset">
         <h2 class="feedback__title">Контактная информация:</h2>
-        <label class="feedback__label">
-          Контактный телефон:
+        <label class="feedback__label feedback__label--contacts">
+          <span class="feedback__text feedback__text--contacts">Контактный телефон:</span>
           <input class="feedback__input feedback__input--tel" name="tel" type="tel" placeholder="Введите телефон">
         </label>
         <div class="feedback__error">Ошибка, перепроверьте номер</div>
-        <label class="feedback__label ">
-          Электронная почта:
+        <label class="feedback__label feedback__label--contacts">
+          <span class="feedback__text feedback__text--contacts">Электронная почта:</span>
           <input class="feedback__input feedback__input--email" name="email" type="email" placeholder="Введите e-mail">
         </label>
       </div>
@@ -162,19 +162,19 @@
       <div class="feedback__fieldset">
         <h2 class="feedback__title">Посещенные достопримечательности:</h2>
         <label class="feedback__choose feedback__choose--checkbox">
-          <input class="feedback__checkbox" name="bridge" type="checkbox" checked>
+          <input class="feedback__checkbox" name="sights" type="checkbox" value="bridge" checked>
           Мост Дьявола
         </label>
         <label class="feedback__choose feedback__choose--checkbox">
-          <input class="feedback__checkbox" name="park" type="checkbox" checked>
+          <input class="feedback__checkbox" name="sights" type="checkbox" value="park" checked>
           Слайд-парк
         </label>
         <label class="feedback__choose feedback__choose--checkbox">
-          <input class="feedback__checkbox" name="mountain" type="checkbox">
+          <input class="feedback__checkbox" name="sights" type="checkbox" value="mountain">
           Гора-Колокол
         </label>
         <label class="feedback__choose feedback__choose--checkbox">
-          <input class="feedback__checkbox" name="rock" type="checkbox" checked>
+          <input class="feedback__checkbox" name="sights" type="checkbox" value="rock" checked>
           Красные скалы
         </label>
       </div>

@@ -12,3 +12,22 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+
+@media (min-width: 768px) {
+  body {
+    width: 48rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    width: 75rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+

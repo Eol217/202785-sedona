@@ -14,11 +14,21 @@
 
 .feedback__label {
   display: flex;
+  align-items: center;
   margin-bottom: 1.25rem;
 
   font-size: $font-size__text;
 
   color: $color__text--grey;
+}
+
+.feedback__label--contacts {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.feedback__text--contacts {
+  margin-left: 2.4rem;
 }
 
 .feedback__input {
@@ -30,6 +40,18 @@
   color: $color__text--grey;
   background-color: $color__bg-input;
   border: 0;
+}
+
+.feedback__error {
+  margin-top: -0.8rem;
+  margin-left: 2.4rem;
+  margin-bottom: 0.8rem;
+
+  font-size: $font-size__text;
+  text-transform: none;
+  text-align: left;
+
+  color: $color__text--error;
 }
 
 .feedback__choose {
