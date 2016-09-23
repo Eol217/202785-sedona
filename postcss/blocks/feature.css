@@ -1,11 +1,11 @@
 .feature__header {
-padding: 2.75rem 2rem 2.75rem;
+padding: 4.4rem 3.2rem;
 
 color: white;
 }
 
 .feature__header--first {
-  padding-top: 3.75rem;
+  padding-top: 6rem;
 }
 
 .feature__header--blue {
@@ -22,8 +22,8 @@ color: white;
 }
 
 .feature__number {
-  padding-top: 0.5rem;
-  padding-bottom: 1rem;
+  padding-top: 0.8rem;
+  padding-bottom: 1.6rem;
 }
 
 .feature__text,
@@ -38,7 +38,7 @@ color: white;
 }
 
 .feature__photo {
-  height: 16.25rem;
+  height: 26rem;
   overflow: hidden;
 }
 

@@ -4,24 +4,24 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
-  width: 20rem;
+  width: 32rem;
 
   line-height: $line-height__primary;
   font-family: "ptsans", "Arial", sans-serif;
   text-align: center;
   text-transform: uppercase;
-}
 
-@media (min-width: 768px) {
-  body {
-    width: 48rem;
+  @media (--tablet-widths) {
+      width: 76.8rem;
   }
-}
 
-@media (min-width: 1200px) {
-  body {
-    width: 75rem;
+  @media (--desktop-widths) {
+      width: 120rem;
   }
 }
 

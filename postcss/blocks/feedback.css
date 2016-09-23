@@ -1,9 +1,9 @@
 .feedback {
-  padding: 0 1.25rem;
+  padding: 0 2rem;
 }
 
 .feedback__fieldset {
-  padding-bottom: 0.4rem;
+  padding-bottom: 0.6rem;
 
   border-top: 1px solid $color__bg-grey;
 }
@@ -15,7 +15,7 @@
 .feedback__label {
   display: flex;
   align-items: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 2rem;
 
   font-size: $font-size__text;
 
@@ -28,12 +28,12 @@
 }
 
 .feedback__text--contacts {
-  margin-left: 2.4rem;
+  margin-left: 3.8rem;
 }
 
 .feedback__input {
-  margin-left: 1.25rem;
-  padding: 1.15rem 1.275rem;
+  margin-left: 2rem;
+  padding: 1.8rem 2rem;
 
   font-size: $font-size__title;
 
@@ -42,10 +42,16 @@
   border: 0;
 }
 
+.feedback__input::placeholder {
+  font-weight: bold;
+
+  opacity: 1;
+}
+
 .feedback__error {
-  margin-top: -0.8rem;
-  margin-left: 2.4rem;
-  margin-bottom: 0.8rem;
+  margin-top: -1.3rem;
+  margin-left: 3.8rem;
+  margin-bottom: 1.3rem;
 
   font-size: $font-size__text;
   text-transform: none;
@@ -56,8 +62,12 @@
 
 .feedback__choose {
   display: flex;
-  margin-bottom: 1.25rem;
-  padding-left: 5rem;
+  margin-bottom: 2rem;
+  padding-left: 8rem;
+
+  font-size: $font-size__title;
+  font-weight: bold;
+  text-transform: none;
 }
 
 .feedback__radio,
@@ -66,6 +76,6 @@
 }
 
 .feedback__btn {
-  margin-top: 3rem;
+  margin-top: 4.8rem;
 }
 
