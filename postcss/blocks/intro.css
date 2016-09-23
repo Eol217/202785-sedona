@@ -1,4 +1,5 @@
 .intro__promo {
+  display: flex;
   height: 39rem;
 
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
@@ -13,16 +14,13 @@
 .intro__svg-title {
   display: block;
   margin: auto;
-  padding-top: 9rem;
-}
-
-.intro__svg-title--secondary {
-  padding-top: 5.2rem;
 }
 
 .intro__description {
-  margin-top: 4.2rem;
-  padding: 0 2.3rem 3.2rem;
+  margin: 4.2rem auto 3.2rem;
+  padding: 0 3.2rem;
+
+  max-width: 55rem;
 
   color: black;
   background-color: white;
@@ -30,6 +28,10 @@
 
 .intro__title {
   font-size: $font-size__title;
+
+  @media (--tablet-widths) {
+    font-size: $font-size__title--secondary;
+  }
 }
 
 .intro__text {

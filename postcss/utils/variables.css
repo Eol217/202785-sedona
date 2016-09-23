@@ -7,6 +7,7 @@ $color__bg-input: color($color__text l(95%));
 
 $font-size__title: 1.8rem;
 $font-size__title--secondary: calc($font-size__title * 21 / 18);
+$font-size__title--tablet: calc($font-size__title * 30 / 18);
 $font-size__text: calc($font-size__title * 14 / 18);
 
 $line-height__primary: calc($font-size__title * 26 / 18);
