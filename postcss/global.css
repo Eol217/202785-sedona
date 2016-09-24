@@ -9,12 +9,15 @@ html {
 }
 
 body {
-  width: 32rem;
-
   line-height: $line-height__primary;
   font-family: "ptsans", "Arial", sans-serif;
   text-align: center;
   text-transform: uppercase;
+}
+
+.container {
+  margin: 0 auto;
+  width: 32rem;
 
   @media (--tablet-widths) {
       width: 76.8rem;
