@@ -4,11 +4,45 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 20rem;
+html {
+  font-size: 10px;
+}
 
+body {
   line-height: $line-height__primary;
   font-family: "ptsans", "Arial", sans-serif;
   text-align: center;
   text-transform: uppercase;
+}
+
+.container {
+  margin: 0 auto;
+  width: 32rem;
+
+  @media (--tablet-widths) {
+      width: 76.8rem;
+  }
+
+  @media (--desktop-widths) {
+      width: 120rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden{
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

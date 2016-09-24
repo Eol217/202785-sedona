@@ -1,12 +1,14 @@
 .footer__twit {
   display: block;
-  padding-top: 2.3rem;
-  padding-bottom: 2.3rem;
+  padding: 3.7rem 0;
 
   font-size: $font-size__title--secondary;
   font-weight: bold;
 }
 
 .footer__copyright {
+  display: flex;
+  justify-content: center;
+
   font-size: $font-size__text;
 }

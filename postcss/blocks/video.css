@@ -1,7 +1,7 @@
 .video__description {
-  padding: 1.5rem 2.3rem;
+  padding: 2.4rem 3.7rem;
 
-  border-top: 1px solid $color__bg-grey;
+  border-top: 0.1rem solid $color__bg-grey;
 }
 
 .video__title {

@@ -1,37 +1,64 @@
 .intro__promo {
-  padding: 5.625rem 1.25rem 5.375rem;
-  height: 24.375rem;
+  display: flex;
+  height: 39rem;
 
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
+
+  @media (--tablet-widths) {
+    height: 51.8rem;
+  }
 }
 
 .intro__promo--secondary {
-  padding: 3.25rem 2.875rem;
-  height: 9.875rem;
+  height: 15.8rem;
 
   background-position: 50% 100%;
+
+  @media (--tablet-widths) {
+    height: 29rem;
+  }
 }
 
 .intro__svg-title {
   display: block;
+  margin: auto;
+
+  @media (--tablet-widths) {
+    width: 46rem;
+    height: 35rem;
+  }
 }
 
 .intro__description {
-  margin-top: 2.625rem;
-  padding-left: 1.45rem;
-  padding-right: 1.4rem;
-  padding-bottom: 2rem;
+  margin: 4.2rem auto 3.2rem;
+  padding: 0 2.1rem;
+
+  max-width: 55rem;
 
   color: black;
   background-color: white;
 }
 
+.intro__description--secondary {
+  max-width: 48rem;
+}
+
 .intro__title {
   font-size: $font-size__title;
+
+  @media (--tablet-widths) {
+    font-size: $font-size__title--secondary;
+  }
+}
+
+.intro__title--secondary {
+  @media (--tablet-widths) {
+    font-size: $font-size__title--tablet;
+  }
 }
 
 .intro__text {
-  margin-top: 1.9rem;
+  margin-top: 3rem;
   font-size: $font-size__text;
 
   color: $color__text--grey;
