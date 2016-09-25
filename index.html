@@ -113,7 +113,7 @@
       </div>
 
       <form class="feedback" name="feedback" action="https://echo.htmlacademy.ru" method="POST">
-        <div class="feedback__fieldset">
+        <div class="feedback__fieldset feedback__fieldset--name">
           <h2 class="feedback__title">Представьтесь, пожалуйста:</h2>
           <label class="feedback__label">
             <span class="feedback__text">Имя:</span>
@@ -128,17 +128,19 @@
             <input class="feedback__input" name="patronymic" type="text" placeholder="Александрович">
           </label>
         </div>
-        <div class="feedback__fieldset">
+        <div class="feedback__fieldset feedback__fieldset--contacts">
           <h2 class="feedback__title">Контактная информация:</h2>
-          <label class="feedback__label feedback__label--contacts">
-            <span class="feedback__text feedback__text--contacts">Контактный телефон:</span>
-            <input class="feedback__input feedback__input--tel" name="tel" type="tel" placeholder="Введите телефон">
-            <span class="feedback__error">Ошибка, перепроверьте номер</span>
-          </label>
-          <label class="feedback__label feedback__label--contacts">
-            <span class="feedback__text feedback__text--contacts">Электронная почта:</span>
-            <input class="feedback__input feedback__input--email" name="email" type="email" placeholder="Введите e-mail">
-          </label>
+          <div class="feedback__contacts-wrapper">
+            <label class="feedback__label feedback__label--contacts">
+              <span class="feedback__text feedback__text--contacts">Контактный телефон:</span>
+              <input class="feedback__input feedback__input--tel" name="tel" type="tel" placeholder="Введите телефон">
+              <span class="feedback__error">Ошибка, перепроверьте номер</span>
+            </label>
+            <label class="feedback__label feedback__label--contacts">
+              <span class="feedback__text feedback__text--contacts">Электронная почта:</span>
+              <input class="feedback__input feedback__input--email" name="email" type="email" placeholder="Введите e-mail">
+            </label>
+          </div>
         </div>
         <div class="feedback__fieldset feedback__fieldset--impression">
           <h2 class="feedback__title feedback__title--impression">Ваше общее впечатление:</h2>
@@ -157,28 +159,31 @@
         </div>
         <div class="feedback__fieldset feedback__fieldset--sights">
           <h2 class="feedback__title feedback__title--sights">Посещенные достопримечательности:</h2>
-          <label class="feedback__choose feedback__choose--checkbox">
-            <input class="feedback__checkbox" name="sights" type="checkbox" value="bridge" checked>
-            Мост Дьявола
-          </label>
-          <label class="feedback__choose feedback__choose--checkbox">
-            <input class="feedback__checkbox" name="sights" type="checkbox" value="park" checked>
-            Слайд-парк
-          </label>
-          <label class="feedback__choose feedback__choose--checkbox">
-            <input class="feedback__checkbox" name="sights" type="checkbox" value="mountain">
-            Гора-Колокол
-          </label>
-          <label class="feedback__choose feedback__choose--checkbox">
-            <input class="feedback__checkbox" name="sights" type="checkbox" value="rock" checked>
-            Красные скалы
-          </label>
+          <div class="feedback__check-wrapper">
+            <label class="feedback__choose feedback__choose--checkbox">
+              <input class="feedback__checkbox" name="sights" type="checkbox" value="bridge" checked>
+              Мост Дьявола
+            </label>
+            <label class="feedback__choose feedback__choose--checkbox">
+              <input class="feedback__checkbox" name="sights" type="checkbox" value="park" checked>
+              Слайд-парк
+            </label>
+            <label class="feedback__choose feedback__choose--checkbox">
+              <input class="feedback__checkbox" name="sights" type="checkbox" value="mountain">
+              Гора-Колокол
+            </label>
+            <label class="feedback__choose feedback__choose--checkbox">
+              <input class="feedback__checkbox" name="sights" type="checkbox" value="rock" checked>
+              Красные скалы
+            </label>
+          </div>
         </div>
         <div class="feedback__fieldset feedback__fieldset--textarea">
           <h2 class="feedback__title">Опишите свои эмоции:</h2>
           <textarea class="feedback__input feedback__input--textarea" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
         <a class="btn feedback__btn" href="#">Отправить отзыв</a>
+        <div class="feedback__required">* — обязательные поля</div>
       </form>
 
       <hr>
