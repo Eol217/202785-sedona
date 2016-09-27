@@ -8,9 +8,9 @@
       padding: 6rem;
     }
 
-   @media (--desktop-widths) {
-     padding: 0;
-   }
+  @media (--desktop-widths) {
+    padding: 0;
+  }
 }
 
 .photo {
