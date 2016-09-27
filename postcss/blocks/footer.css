@@ -1,6 +1,21 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  min-height: 17.6rem;
+  margin-top: 5rem;
+
+  @media (--tablet-widths) {
+    flex-direction: row;
+    align-items: center;
+    min-height: 12rem;
+  }
+}
+
 .footer__twit {
   display: block;
-  padding: 3.7rem 0;
+
 
   font-size: $font-size__title--secondary;
   font-weight: bold;

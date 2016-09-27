@@ -172,7 +172,7 @@
 
   @media (--desktop-widths) {
     order: -1;
-    margin-left: 12rem; /*переделать выравнивание*/
+    margin-left: 17rem; /*переделать выравнивание*/
     width: 100%;
   }
 }

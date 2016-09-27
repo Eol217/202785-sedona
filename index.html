@@ -201,10 +201,12 @@
 
       <div class="photos">
         <div class="photo">
-          <img class="photo__preview" src="img/photo-1-mobile@1x.jpg" alt="">
+          <img class="photo__preview photo__preview--first" src="img/photo-1-mobile@1x.jpg" alt="">
           <div class="photo__info">
-            <h2 class="photo__title">Неродные просторы</h2>
-            <p class="photo__author">Автор фото: Борис</p>
+            <div class="photo__text">
+              <h2 class="photo__title">Неродные просторы</h2>
+              <p class="photo__author">Автор фото: Борис</p>
+            </div>
             <div class="photo__like">
               <button class="photo__like-btn">Лайк!</button>
               <span class="photo__like-counter">1350</span>
@@ -214,8 +216,10 @@
         <div class="photo">
           <img class="photo__preview" src="img/photo-2-mobile@1x.jpg" alt="">
           <div class="photo__info">
-            <h2 class="photo__title">Местная растительность</h2>
-            <p class="photo__author">Автор фото: Сергей</p>
+            <div class="photo__text">
+              <h2 class="photo__title">Местная растительность</h2>
+              <p class="photo__author">Автор фото: Сергей</p>
+            </div>
             <div class="photo__like">
               <button class="photo__like-btn">Лайк!</button>
               <span class="photo__like-counter">143</span>
@@ -224,9 +228,11 @@
         </div>
         <div class="photo">
           <img class="photo__preview" src="img/photo-3-mobile@1x.jpg" alt="">
-          <div class="photo__info">
-            <h2 class="photo__title">Дорога на север</h2>
-            <p class="photo__author">Автор фото: Петр</p>
+          <div class="photo__info photo__info--darker">
+            <div class="photo__text">
+              <h2 class="photo__title">Дорога на север</h2>
+              <p class="photo__author">Автор фото: Петр</p>
+            </div>
             <div class="photo__like">
               <button class="photo__like-btn">Лайк!</button>
               <span class="photo__like-counter">96</span>
@@ -236,8 +242,10 @@
         <div class="photo">
           <img class="photo__preview" src="img/photo-4-mobile@1x.jpg" alt="">
           <div class="photo__info">
-            <h2 class="photo__title">Мост дьявола</h2>
-            <p class="photo__author">Автор фото: Антон</p>
+            <div class="photo__text">
+              <h2 class="photo__title">Мост дьявола</h2>
+              <p class="photo__author">Автор фото: Антон</p>
+            </div>
             <div class="photo__like">
               <button class="photo__like-btn">Лайк!</button>
               <span class="photo__like-counter">254</span>
@@ -275,12 +283,12 @@
             <a class="social__link social__link--fb" href="#">Facebook</a>
             <a class="social__link social__link--youtube" href="#">Youtube</a>
         </div>
-        <p class="footer__copyright">
+        <div class="footer__copyright">
           Разработано
           <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             <img src="img/htmlacademy.svg" width="27" height="34" alt="">
           </a>
-        </p>
+        </div>
       </footer>
     </div>
   </body>

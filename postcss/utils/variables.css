@@ -4,6 +4,7 @@ $color__text--grey: color($color__text l(20%));
 $color__bg-grey: color($color__text l(90%));
 $color__text--error: hsl(0, 100%, 68%);
 $color__bg-input: color($color__text l(95%));
+$color__bg-photo: color($color__text l(92%));
 
 $font-size__title: 1.8rem;
 $font-size__title--secondary: calc($font-size__title * 21 / 18);
