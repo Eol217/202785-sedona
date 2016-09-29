@@ -4,6 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -113,7 +115,7 @@
       </div>
 
       <form class="feedback" name="feedback" action="https://echo.htmlacademy.ru" method="POST">
-        <div class="feedback__fieldset">
+        <div class="feedback__fieldset feedback__fieldset--name">
           <h2 class="feedback__title">Представьтесь, пожалуйста:</h2>
           <label class="feedback__label">
             <span class="feedback__text">Имя:</span>
@@ -128,17 +130,19 @@
             <input class="feedback__input" name="patronymic" type="text" placeholder="Александрович">
           </label>
         </div>
-        <div class="feedback__fieldset">
+        <div class="feedback__fieldset feedback__fieldset--contacts">
           <h2 class="feedback__title">Контактная информация:</h2>
-          <label class="feedback__label feedback__label--contacts">
-            <span class="feedback__text feedback__text--contacts">Контактный телефон:</span>
-            <input class="feedback__input feedback__input--tel" name="tel" type="tel" placeholder="Введите телефон">
-            <span class="feedback__error">Ошибка, перепроверьте номер</span>
-          </label>
-          <label class="feedback__label feedback__label--contacts">
-            <span class="feedback__text feedback__text--contacts">Электронная почта:</span>
-            <input class="feedback__input feedback__input--email" name="email" type="email" placeholder="Введите e-mail">
-          </label>
+          <div class="feedback__contacts-wrapper">
+            <label class="feedback__label feedback__label--contacts">
+              <span class="feedback__text feedback__text--contacts">Контактный телефон:</span>
+              <input class="feedback__input feedback__input--tel" name="tel" type="tel" placeholder="Введите телефон">
+              <span class="feedback__error">Ошибка, перепроверьте номер</span>
+            </label>
+            <label class="feedback__label feedback__label--contacts">
+              <span class="feedback__text feedback__text--contacts">Электронная почта:</span>
+              <input class="feedback__input feedback__input--email" name="email" type="email" placeholder="Введите e-mail">
+            </label>
+          </div>
         </div>
         <div class="feedback__fieldset feedback__fieldset--impression">
           <h2 class="feedback__title feedback__title--impression">Ваше общее впечатление:</h2>
@@ -157,28 +161,31 @@
         </div>
         <div class="feedback__fieldset feedback__fieldset--sights">
           <h2 class="feedback__title feedback__title--sights">Посещенные достопримечательности:</h2>
-          <label class="feedback__choose feedback__choose--checkbox">
-            <input class="feedback__checkbox" name="sights" type="checkbox" value="bridge" checked>
-            Мост Дьявола
-          </label>
-          <label class="feedback__choose feedback__choose--checkbox">
-            <input class="feedback__checkbox" name="sights" type="checkbox" value="park" checked>
-            Слайд-парк
-          </label>
-          <label class="feedback__choose feedback__choose--checkbox">
-            <input class="feedback__checkbox" name="sights" type="checkbox" value="mountain">
-            Гора-Колокол
-          </label>
-          <label class="feedback__choose feedback__choose--checkbox">
-            <input class="feedback__checkbox" name="sights" type="checkbox" value="rock" checked>
-            Красные скалы
-          </label>
+          <div class="feedback__check-wrapper">
+            <label class="feedback__choose feedback__choose--checkbox">
+              <input class="feedback__checkbox" name="sights" type="checkbox" value="bridge" checked>
+              Мост Дьявола
+            </label>
+            <label class="feedback__choose feedback__choose--checkbox">
+              <input class="feedback__checkbox" name="sights" type="checkbox" value="park" checked>
+              Слайд-парк
+            </label>
+            <label class="feedback__choose feedback__choose--checkbox">
+              <input class="feedback__checkbox" name="sights" type="checkbox" value="mountain">
+              Гора-Колокол
+            </label>
+            <label class="feedback__choose feedback__choose--checkbox">
+              <input class="feedback__checkbox" name="sights" type="checkbox" value="rock" checked>
+              Красные скалы
+            </label>
+          </div>
         </div>
         <div class="feedback__fieldset feedback__fieldset--textarea">
           <h2 class="feedback__title">Опишите свои эмоции:</h2>
           <textarea class="feedback__input feedback__input--textarea" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
         <a class="btn feedback__btn" href="#">Отправить отзыв</a>
+        <div class="feedback__required">* — обязательные поля</div>
       </form>
 
       <hr>
@@ -196,10 +203,12 @@
 
       <div class="photos">
         <div class="photo">
-          <img class="photo__preview" src="img/photo-1-mobile@1x.jpg" alt="">
+          <img class="photo__preview photo__preview--first" src="img/photo-1-mobile@1x.jpg" alt="">
           <div class="photo__info">
-            <h2 class="photo__title">Неродные просторы</h2>
-            <p class="photo__author">Автор фото: Борис</p>
+            <div class="photo__text">
+              <h2 class="photo__title">Неродные просторы</h2>
+              <p class="photo__author">Автор фото: Борис</p>
+            </div>
             <div class="photo__like">
               <button class="photo__like-btn">Лайк!</button>
               <span class="photo__like-counter">1350</span>
@@ -209,8 +218,10 @@
         <div class="photo">
           <img class="photo__preview" src="img/photo-2-mobile@1x.jpg" alt="">
           <div class="photo__info">
-            <h2 class="photo__title">Местная растительность</h2>
-            <p class="photo__author">Автор фото: Сергей</p>
+            <div class="photo__text">
+              <h2 class="photo__title">Местная растительность</h2>
+              <p class="photo__author">Автор фото: Сергей</p>
+            </div>
             <div class="photo__like">
               <button class="photo__like-btn">Лайк!</button>
               <span class="photo__like-counter">143</span>
@@ -219,9 +230,11 @@
         </div>
         <div class="photo">
           <img class="photo__preview" src="img/photo-3-mobile@1x.jpg" alt="">
-          <div class="photo__info">
-            <h2 class="photo__title">Дорога на север</h2>
-            <p class="photo__author">Автор фото: Петр</p>
+          <div class="photo__info photo__info--darker">
+            <div class="photo__text">
+              <h2 class="photo__title">Дорога на север</h2>
+              <p class="photo__author">Автор фото: Петр</p>
+            </div>
             <div class="photo__like">
               <button class="photo__like-btn">Лайк!</button>
               <span class="photo__like-counter">96</span>
@@ -231,8 +244,10 @@
         <div class="photo">
           <img class="photo__preview" src="img/photo-4-mobile@1x.jpg" alt="">
           <div class="photo__info">
-            <h2 class="photo__title">Мост дьявола</h2>
-            <p class="photo__author">Автор фото: Антон</p>
+            <div class="photo__text">
+              <h2 class="photo__title">Мост дьявола</h2>
+              <p class="photo__author">Автор фото: Антон</p>
+            </div>
             <div class="photo__like">
               <button class="photo__like-btn">Лайк!</button>
               <span class="photo__like-counter">254</span>
@@ -270,12 +285,12 @@
             <a class="social__link social__link--fb" href="#">Facebook</a>
             <a class="social__link social__link--youtube" href="#">Youtube</a>
         </div>
-        <p class="footer__copyright">
+        <div class="footer__copyright">
           Разработано
           <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             <img src="img/htmlacademy.svg" width="27" height="34" alt="">
           </a>
-        </p>
+        </div>
       </footer>
     </div>
   </body>
