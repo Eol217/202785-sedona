@@ -19,7 +19,11 @@
           <a class="main-nav__item" href="#">Форма отзыва</a>
           <a class="main-nav__item" href="#">HTML Academy</a>
           <a class="main-nav__item main-nav__item--logo">
-            <img class="main-nav__logo" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="main-nav__logo" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
+            </picture>
           </a>
         </nav>
       </header>
@@ -42,7 +46,11 @@
             <div class="feature__text">Седона не атракцион для туристов, там течет своя жизнь</div>
           </header>
           <div class="feature__photo">
-            <img class="feature__img" src="img/photo-city@1x.jpg" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-city@1x.jpg 1x, img/photo-city@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+              <img class="feature__img" src="img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="">
+            </picture>
           </div>
           <ul class="benefits">
             <li class="benefits__item">
@@ -66,7 +74,11 @@
             <div class="feature__text">Да, по нему можно пройти! Если конечно вы осмелитесь</div>
           </header>
           <div class="feature__photo">
-            <img class="feature__img" src="img/photo-bridge@1x.jpg" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge@1x.jpg 1x, img/photo-bridge@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img class="feature__img" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="">
+            </picture>
           </div>
         </div>
         <div class="feature feature--small">
@@ -99,7 +111,11 @@
       </div>
 
       <div class="map">
-        <img class="map__img" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
+          <img class="map__img" src="img/bg-map-mobile@1x.jpg" alt="City of Sedona">
+        </picture>
       </div>
 
       <hr>
