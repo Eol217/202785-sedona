@@ -3,10 +3,10 @@
   flex-direction: column;
 
   @media (--tablet-widths) {
-      flex-direction: row;
-      flex-wrap: wrap;
-      padding: 6rem;
-    }
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 6rem;
+  }
 
   @media (--desktop-widths) {
     padding: 0;

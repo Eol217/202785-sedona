@@ -22,13 +22,13 @@
   color: white;
 
   @media (--tablet-widths) {
-      padding: 4.5rem; /*6%*/
-      padding-top: 2rem;
-      height: 25.6rem;
-      flex-basis: 25.6rem;
-      flex-grow: 1;
-      order: 1;
-    }
+    padding: 4.5rem; /*6%*/
+    padding-top: 2rem;
+    height: 25.6rem;
+    flex-basis: 25.6rem;
+    flex-grow: 1;
+    order: 1;
+  }
 }
 
 .feature__header--first {
@@ -53,9 +53,9 @@
   color: black;
   background-color: $color__bg-grey;
 
-    @media (--tablet-widths) {
-      padding: 2rem 5rem;
-    }
+  @media (--tablet-widths) {
+    padding: 2rem 5rem;
+  }
 }
 
 .feature__title {

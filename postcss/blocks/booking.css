@@ -8,6 +8,7 @@
   margin-top: 0;
 
   font-size: $font-size__title--secondary;
+
   @media (--tablet-widths) {
     font-size: $font-size__title--tablet;
   }
