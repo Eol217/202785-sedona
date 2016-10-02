@@ -22,8 +22,9 @@
 
   color: white;
   background-color: $color__primary;
-  box-shadow: inset 0 0.1rem 0 hsla(0, 0%, 100%, 0.2),
-              0 0.1rem 0 hsla(0, 0%, 0%, 0.2);
+  box-shadow:
+    inset 0 0.1rem 0 hsla(0, 0%, 100%, 0.2),
+    0 0.1rem 0 hsla(0, 0%, 0%, 0.2);
 
   @media (--tablet-widths) {
     flex-basis: 15.3rem;
@@ -58,18 +59,18 @@
 }
 
 .main-nav__toggle {
-    position: absolute;
-    top: 1.6rem;
-    right: 2rem;
+  position: absolute;
+  top: 1.6rem;
+  right: 2rem;
 
-    display: block;
-    width: 2.2rem;
-    height: 2.2rem  ;
+  display: block;
+  width: 2.2rem;
+  height: 2.2rem  ;
 
-    font-size: 0;
+  font-size: 0;
 
-    background: url("../img/icon-cross.svg") no-repeat;
-    cursor: pointer;
+  background: url("../img/icon-cross.svg") no-repeat;
+  cursor: pointer;
 }
 
 .main-nav--closed .main-nav__item:not(:last-child) {

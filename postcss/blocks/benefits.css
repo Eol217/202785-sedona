@@ -1,8 +1,7 @@
 .benefits {
-
   margin: 0;
   padding: 3.5rem;
-  padding-left: 7rem;
+  padding-left: 2.5rem;
 
   text-align: left;
   list-style: none;
@@ -10,34 +9,63 @@
   @media (--tablet-widths) {
     display: flex;
     justify-content: space-around;
-    padding: 17rem 0 7rem;
+    padding: 6rem 0 7rem;
   }
 }
 
 .benefits__item {
+  display: flex;
+  align-items: flex-start;
+
   @media (--tablet-widths) {
+    flex-direction: column;
+    align-items: center;
     flex-basis: 16rem;
     margin: auto;
 
     text-align: center;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-
-
+  @media (--desktop-widths) {
+    flex-basis: 29rem;
   }
 }
 
 .benefits__item:nth-child(2) {
-  order: 1;
+  @media (--tablet-widths) {
+    flex-basis: 18rem;
+    order: 1;
+  }
+
+  @media (--desktop-widths) {
+    flex-basis: 22rem;
+  }
 }
 
 .benefits__item:not(:first-child) {
   margin-top: 2.6rem;
+}
+
+.benefits__icon {
+  @media (--mobile-widths-only) {
+    height: 3.6rem;
+    margin-top: -1rem;
+    margin-right: 1rem;
+  }
+}
+
+.benefits__icon--gift {
+  @media (--mobile-widths-only) {
+    margin-right: 1.5rem;
+    margin-left: 0.5rem;
+  }
+}
+
+.benefits__icon--burger {
+  @media (--mobile-widths-only) {
+    margin-top: -0.5rem;
+    margin-left: -0.5rem;
+  }
 }
 
 .benefits__title {
@@ -46,6 +74,8 @@
   font-size: $font-size__title;
 
   @media (--tablet-widths) {
+    margin-top: 3.2rem;
+
     font-size: $font-size__title--secondary;
   }
 }
