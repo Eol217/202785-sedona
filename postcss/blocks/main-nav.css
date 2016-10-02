@@ -36,6 +36,10 @@
     background-color: white;
     box-shadow: none;
   }
+
+  @media (--desktop-widths) {
+    flex-basis: 23.9rem;
+  }
 }
 
 .main-nav__item--logo {
@@ -44,6 +48,13 @@
 
   background-color: white;
   box-shadow: none;
+}
+
+.main-nav__logo {
+  @media (--desktop-widths) {
+    width: 18.8rem;
+    height: 9.6rem;
+  }
 }
 
 .main-nav__toggle {

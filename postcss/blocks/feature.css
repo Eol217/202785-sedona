@@ -32,7 +32,12 @@
 }
 
 .feature__header--first {
-  padding-top: 6rem;
+  padding-top: 8rem;
+
+  @media (--mobile-widths-only) {
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+  }
 
   @media (--tablet-widths) {
     padding-top: 3rem;
@@ -54,6 +59,8 @@
 }
 
 .feature__title {
+  margin: 0;
+
   font-size: $font-size__title;
 
   @media (--tablet-widths) {
@@ -62,7 +69,7 @@
 }
 
 .feature__number {
-  padding-top: 0.8rem;
+  padding-top: 1.2rem;
   padding-bottom: 1.6rem;
 }
 

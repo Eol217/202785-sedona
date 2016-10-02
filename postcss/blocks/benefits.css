@@ -1,7 +1,7 @@
 .benefits {
 
   margin: 0;
-  padding: 3.9rem;
+  padding: 3.5rem;
   padding-left: 7rem;
 
   text-align: left;
@@ -21,6 +21,15 @@
 
     text-align: center;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+  }
 }
 
 .benefits__item:nth-child(2) {
@@ -28,11 +37,12 @@
 }
 
 .benefits__item:not(:first-child) {
-  margin-top: 2.1rem;
+  margin-top: 2.6rem;
 }
 
 .benefits__title {
-  margin-top: 0;
+  margin: 0;
+  margin-bottom: 1.5rem;
   font-size: $font-size__title;
 
   @media (--tablet-widths) {

@@ -19,3 +19,4 @@ $line-height__text--secondary: calc($font-size__title * 24 / 18);
 @custom-media --mobile-widths-only (width < 768px);
 @custom-media --tablet-widths (width >= 768px);
 @custom-media --desktop-widths (width >= 1200px);
+@custom-media --retina (min-resolution: 144dpi), (min-resolution: 1.5dppx);

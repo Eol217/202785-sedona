@@ -31,7 +31,7 @@
 
   @media (--desktop-widths) {
     &:not(:first-child) {
-    width: 33.33%;
+      width: 33.33%;
     }
   }
 }
@@ -86,8 +86,8 @@
   }
 
   @media (--desktop-widths) {
-      background-color: color($color__bg-photo a(0.3));
-    }
+    background-color: color($color__bg-photo a(0.3));
+  }
 }
 
 .photo__text {
