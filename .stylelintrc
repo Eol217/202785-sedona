@@ -1,0 +1,15 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "comment-whitespace-inside": "never",
+    "declaration-block-semicolon-space-before": null,
+    "declaration-colon-newline-after": "always-multi-line",
+    "declaration-empty-line-before": null,
+    "declaration-no-important": true,
+    "declaration-property-value-blacklist": {
+      "display": "table",
+      "position": "absolute"
+    },
+    "selector-no-id": true
+  }
+}
