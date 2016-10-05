@@ -57,19 +57,6 @@ gulp.task("symbols", function() {
   .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("serve", function() {
-  server.init({
-    server: "build",
-    notify: false,
-    open: true,
-    ui: false
-  });
-
-  gulp.watch("postcss/**/*.css", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
-  gulp.watch("img/*.svg").on("change", server.reload);
-});
-
 gulp.task("clean", function() {
   return del("build");
 });
@@ -86,6 +73,28 @@ gulp.task("copy", function() {
   .pipe(gulp.dest("build"));
 });
 
+gulp.task("copy:html", function() {
+  return gulp.src([
+    "*.html"
+  ], {
+    base: "."
+  })
+  .pipe(gulp.dest("build"));
+});
+
+gulp.task("serve", function() {
+  server.init({
+    server: "build",
+    notify: false,
+    open: true,
+    ui: false
+  });
+
+  gulp.watch("postcss/**/*.css", ["style"]);
+  gulp.watch("*.html", ["copy:html"]);
+  gulp.watch("build/*.html").on("change", server.reload);
+});
+
 gulp.task("build", function(fn) {
   run(
     "clean",
@@ -95,5 +104,3 @@ gulp.task("build", function(fn) {
     "symbols",
     fn);
 });
-
-
