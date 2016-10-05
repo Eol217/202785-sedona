@@ -1,11 +1,11 @@
 .booking {
   margin: 0 auto;
-  padding: 3rem 2rem 5rem;
+  padding: 2.7rem 1.9rem 4.7rem;
   max-width: 45.8rem;
 }
 
 .booking__title {
-  margin-top: 0;
+  margin: 0;
 
   font-size: $font-size__title--secondary;
 
@@ -15,6 +15,7 @@
 }
 
 .booking__text {
+  margin: 1.8rem 0;
   margin-bottom: 3.5rem;
 
   font-size: $font-size__text;

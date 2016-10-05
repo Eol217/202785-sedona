@@ -1,6 +1,7 @@
 .benefits {
   margin: 0;
   padding: 3.5rem;
+  padding-right: 3rem;
   padding-left: 2.5rem;
 
   text-align: left;
@@ -56,8 +57,7 @@
 
 .benefits__icon--gift {
   @media (--mobile-widths-only) {
-    margin-right: 1.5rem;
-    margin-left: 0.5rem;
+    margin-right: 1rem;
   }
 }
 
@@ -65,6 +65,12 @@
   @media (--mobile-widths-only) {
     margin-top: -0.5rem;
     margin-left: -0.5rem;
+  }
+}
+
+.benefits__wrapper--gift {
+  @media (--mobile-widths-only) {
+    padding-left: 0.5rem;
   }
 }
 
