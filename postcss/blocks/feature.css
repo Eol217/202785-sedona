@@ -25,12 +25,15 @@
   color: white;
 
   @media (--tablet-widths) {
-    padding: 4.5rem; /*6%*/
-    padding-top: 2rem;
+    padding: 4.5rem;
     height: 25.6rem;
     flex-basis: 25.6rem;
     flex-grow: 1;
     order: 1;
+  }
+
+  @media (--desktop-widths) {
+    padding: 5rem 6rem;
   }
 }
 
@@ -45,7 +48,6 @@
   }
 
   @media (--tablet-widths) {
-    padding-top: 3rem;
     order: 0;
   }
 }
@@ -61,8 +63,13 @@
   color: black;
   background-color: $color__bg-grey;
 
-  @media (--tablet-widths) {
-    padding: 2rem 5rem;
+  @media (--tablet-widths){
+    padding: 4.4rem 5rem;
+  }
+
+  @media (--desktop-widths) {
+    width: 40rem;
+    padding: 4.4rem 5rem;
   }
 
   &::after {
@@ -87,13 +94,51 @@
   font-size: $font-size__title;
 
   @media (--tablet-widths) {
+    padding: 0 0.75rem;
+
     font-size: $font-size__title--secondary;
+  }
+
+  @media (--desktop-widths) {
+    padding: 0 6.45rem;
+  }
+}
+
+.feature__title--grey {
+  @media (--desktop-widths) {
+    padding: 0 7rem;
   }
 }
 
 .feature__number {
+  position: relative;
+
+  display: inline-block;
   padding-top: 1rem;
   padding-bottom: 1.5rem;
+
+  vertical-align: top;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2rem;
+    left: -1.3rem;
+
+    width: 0.8rem;
+    height: 0.1rem;
+
+    background-color: white;
+  }
+
+  &::before {
+    left: 2.8rem;
+  }
+
+  @media (--tablet-widths) {
+    padding-bottom: 2rem;
+  }
 }
 
 .feature__text,
@@ -105,6 +150,13 @@
 .feature__text--grey,
 .feature__number--grey {
   color: $color__text--grey;
+}
+
+.feature__number--grey {
+  &::after,
+  &::before {
+    background-color: $color__text--grey;
+  }
 }
 
 .feature__photo {

@@ -10,7 +10,11 @@
   @media (--tablet-widths) {
     display: flex;
     justify-content: space-around;
-    padding: 6rem 0 7rem;
+    padding: 6rem 0 5.7rem;
+  }
+
+  @media (--desktop-widths) {
+    padding-bottom: 7.8rem;
   }
 }
 
@@ -22,7 +26,7 @@
     flex-direction: column;
     align-items: center;
     flex-basis: 16rem;
-    margin: auto;
+    margin: 0 auto;
 
     text-align: center;
   }
@@ -36,15 +40,20 @@
   @media (--tablet-widths) {
     flex-basis: 18rem;
     order: 1;
+
+    margin: 0 3.7rem;
   }
 
   @media (--desktop-widths) {
-    flex-basis: 22rem;
+    flex-basis: 29rem;
+    margin: 0 auto;
   }
 }
 
 .benefits__item:not(:first-child) {
-  margin-top: 2.6rem;
+  @media (--mobile-widths-only) {
+    margin-top: 2.6rem;
+  }
 }
 
 .benefits__icon {
@@ -62,6 +71,9 @@
 }
 
 .benefits__icon--burger {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+
   @media (--mobile-widths-only) {
     margin-top: -0.5rem;
     margin-left: -0.5rem;
@@ -80,7 +92,8 @@
   font-size: $font-size__title;
 
   @media (--tablet-widths) {
-    margin-top: 3.2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
 
     font-size: $font-size__title--secondary;
   }
