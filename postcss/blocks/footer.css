@@ -27,11 +27,15 @@
   font-size: $font-size__text;
 
     @media (--desktop-widths) {
-      margin-right: -8rem;
-      margin-left: 9rem;
+      margin-right: -8.5rem;
+      margin-left: 9.5rem;
     }
 }
 
 .footer__copyright-link {
   margin-left: 1rem;
+
+  @media (--desktop-widths) {
+    // margin-left: 1.6rem;
+  }
 }

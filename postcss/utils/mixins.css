@@ -1,0 +1,16 @@
+@define-mixin border-top $mt: 7.5rem {
+  position: relative;
+  margin-top: $mt;
+
+  border-top: 0.1rem solid $color__bg-grey;
+}
+
+@define-mixin title-shift $top: -1.5rem {
+  position: relative;
+  top: $top;
+
+  width: 39.6rem;
+  margin: 0 auto;
+
+  background-color: white;
+}

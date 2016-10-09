@@ -40,7 +40,7 @@
 
       <form class="feedback" name="feedback" action="https://echo.htmlacademy.ru" method="POST">
         <div class="feedback__fieldset feedback__fieldset--name">
-          <h2 class="feedback__title">Представьтесь, пожалуйста:</h2>
+          <h2 class="feedback__title feedback__title--name">Представьтесь, пожалуйста:</h2>
           <label class="feedback__label">
             <span class="feedback__text">Имя:</span>
             <input class="feedback__input" name="firstname" type="text" placeholder="Петр">
@@ -49,17 +49,17 @@
             <span class="feedback__text">Фамилия:</span>
             <input class="feedback__input" name="surname" type="text" placeholder="Иванов">
           </label>
-          <label class="feedback__label">
+          <label class="feedback__label feedback__label--last">
             <span class="feedback__text">Отчество:</span>
             <input class="feedback__input" name="patronymic" type="text" placeholder="Александрович">
           </label>
         </div>
         <div class="feedback__fieldset feedback__fieldset--contacts">
-          <h2 class="feedback__title">Контактная информация:</h2>
+          <h2 class="feedback__title feedback__title--contacts">Контактная информация:</h2>
           <div class="feedback__contacts-wrapper">
-            <label class="feedback__label feedback__label--contacts">
+            <label class="feedback__label feedback__label--contacts feedback__label--tel">
               <span class="feedback__text feedback__text--contacts">Контактный телефон:</span>
-              <div class="feedback_input-wrapper">
+              <div class="feedback_input-wrapper feedback_input-wrapper--tel">
                 <input class="feedback__input feedback__input--tel" name="tel" type="tel" placeholder="Введите телефон">
                 <div class="feedback__icon">
                   <svg width="16" height="58"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"></use></svg>
@@ -90,7 +90,7 @@
             <div class="feedback__custom feedback__custom--radio"></div>
             Скорее отрицательное
           </label>
-          <label class="feedback__choose">
+          <label class="feedback__choose feedback__choose--last">
             <input class="feedback__radio" name="impression" type="radio" value="3">
             <div class="feedback__custom feedback__custom--radio"></div>
             Затрудняюсь ответить
@@ -126,7 +126,7 @@
           <textarea class="feedback__input feedback__input--textarea" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
         <a class="btn feedback__btn" href="#">Отправить отзыв</a>
-        <div class="feedback__required">* — обязательные поля</div>
+        <div class="feedback__required">* &ndash; обязательные поля</div>
       </form>
 
       <footer class="footer">
