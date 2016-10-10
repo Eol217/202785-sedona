@@ -74,7 +74,9 @@
               <p class="photo__author">Автор фото: Сергей</p>
             </div>
             <div class="photo__like">
-              <a class="photo__like-btn">Лайк!</a>
+              <a class="photo__like-btn">
+                <svg width="23" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-like"></use></svg>
+              </a>
               <span class="photo__like-counter">143</span>
             </div>
           </div>
@@ -93,7 +95,9 @@
               <p class="photo__author">Автор фото: Петр</p>
             </div>
             <div class="photo__like">
-              <a class="photo__like-btn">Лайк!</a>
+              <a class="photo__like-btn">
+                <svg width="23" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-like"></use></svg>
+              </a>
               <span class="photo__like-counter">96</span>
             </div>
           </div>
@@ -112,7 +116,9 @@
               <p class="photo__author">Автор фото: Антон</p>
             </div>
             <div class="photo__like">
-              <a class="photo__like-btn">Лайк!</a>
+              <a class="photo__like-btn">
+                <svg width="23" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-like"></use></svg>
+              </a>
               <span class="photo__like-counter">254</span>
             </div>
           </div>
@@ -131,16 +137,22 @@
             <img class="video__preview" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="">
           </picture>
         </div>
-        <div class="video__controls">
-          <div class="video__controls-top">
-            <div class="video__controls-slider">
-              <div class="video__controls-slide"></div>
+        <div class="video__control">
+          <div class="video__control-top">
+            <div class="video__control-slider">
+              <div class="video__control-slide"></div>
             </div>
           </div>
-          <div class="video__controls-bottom">
-            <div class="video__control-btn video__control-btn--repeat"></div>
-            <div class="video__control-btn video__control-btn--cc"></div>
-            <div class="video__control-btn video__control-btn--full"></div>
+          <div class="video__control-btn video__control-btn--repeat">
+            <svg class="video__control-icon video__control-icon--repeat" width="16" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-video-replay"></use></svg>
+          </div>
+          <div class="video__control-right">
+            <div class="video__control-btn video__control-btn--cc">
+              <svg class="video__control-icon video__control-icon--cc" width="32" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-video-subtitles"></use></svg>
+            </div>
+            <div class="video__control-btn video__control-btn--full">
+              <svg class="video__control-icon video__control-icon--full" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-video-fullscreen"></use></svg>
+            </div>
           </div>
         </div>
       </div>

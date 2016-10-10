@@ -15,7 +15,7 @@
 }
 
 .photo {
-  padding: 2.1rem 2rem;
+  padding: 2.2rem 2rem 1.5rem;
 
   border-top: 0.1rem solid $color__bg-grey;
 
@@ -107,6 +107,10 @@
   margin: 0;
 
   text-transform: none;
+}
+
+.photo__like {
+  margin-top: 0.6rem;
 }
 
 .photo__like-btn {
