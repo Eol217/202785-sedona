@@ -1,10 +1,10 @@
 $color__primary: hsl(203, 47%, 66%);
 $color__text: hsl(0, 0%, 0%);
-$color__text--grey: color($color__text l(20%));
-$color__bg-grey: color($color__text l(90%));
+$color__text--grey: hsl(0, 0%, 20%);
+$color__bg-grey: hsl(0, 0%, 90%);
 $color__text--error: hsl(0, 100%, 68%);
-$color__bg-input: color($color__text l(95%));
-$color__bg-photo: color($color__text l(92%));
+$color__bg-input: hsl(0, 0%, 95%);
+$color__bg-photo: hsl(0, 0%, 92%);
 
 $font-size__title: 1.8rem;
 $font-size__title--secondary: calc($font-size__title * 21 / 18);

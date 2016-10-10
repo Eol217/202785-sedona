@@ -109,6 +109,10 @@
   text-transform: none;
 }
 
+.photo__like-btn {
+  opacity: 0.3;
+}
+
 .photo__like-counter {
   padding-left: 1rem;
 

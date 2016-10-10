@@ -13,6 +13,7 @@ body {
   font-family: "ptsans", "Arial", sans-serif;
   text-align: center;
   text-transform: uppercase;
+  background-color: $color__bg-input;
 }
 
 .container {

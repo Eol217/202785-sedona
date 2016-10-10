@@ -18,6 +18,9 @@
 
   font-size: $font-size__title--secondary;
   font-weight: bold;
+  text-decoration: none;
+
+  color: black;
 }
 
 .footer__copyright {
