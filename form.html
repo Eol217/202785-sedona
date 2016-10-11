@@ -125,7 +125,7 @@
           <h2 class="feedback__title feedback__title--textarea">Опишите свои эмоции:</h2>
           <textarea class="feedback__input feedback__input--textarea" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
-        <a class="btn feedback__btn" href="#">Отправить отзыв</a>
+        <a class="btn feedback__btn" href="feedback.html"><span class="btn__text">Отправить отзыв</span></a>
         <div class="feedback__required">* &ndash; обязательные поля</div>
       </form>
 
@@ -154,6 +154,10 @@
     <script>
       var mainNavToggle = document.querySelector(".main-nav__toggle");
       var mainNav = document.querySelector(".main-nav");
+
+      document.addEventListener("DOMContentLoaded", function() {
+        mainNav.classList.add("main-nav--closed");
+      });
 
       mainNavToggle.addEventListener("click", function(e) {
         e.preventDefault();

@@ -32,7 +32,7 @@
     "stylelint-config-standard": "^13.0.2"
   },
   "scripts": {
-    "test": "editorconfig-cli",
+    "test": " editorconfig-cli && npm run test:styles && npm run build",
     "build": "gulp build",
     "start": "npm run build && gulp serve",
     "test:styles": "stylelint postcss/**/*.css"

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -183,6 +182,10 @@
     <script>
       var mainNavToggle = document.querySelector(".main-nav__toggle");
       var mainNav = document.querySelector(".main-nav");
+
+      document.addEventListener("DOMContentLoaded", function() {
+        mainNav.classList.add("main-nav--closed");
+      });
 
       mainNavToggle.addEventListener("click", function(e) {
         e.preventDefault();

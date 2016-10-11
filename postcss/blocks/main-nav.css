@@ -36,10 +36,28 @@
     color: black;
     background-color: white;
     box-shadow: none;
+
+    &:hover {
+      color: hsl(203, 47%, 66%);
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   @media (--desktop-widths) {
     flex-basis: 23.9rem;
+  }
+}
+
+.main-nav__item--active {
+  @media (--tablet-widths) {
+    color: hsl(23, 15%, 40%);
+
+    &:hover {
+      color: hsl(23, 18%, 32%);
+    }
   }
 }
 
