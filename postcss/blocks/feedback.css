@@ -85,7 +85,7 @@
 
     background-color: white;
     outline: none;
-    border: 4px solid $color__bg-grey;
+    border: 0.4rem solid $color__bg-grey;
   }
 }
 
