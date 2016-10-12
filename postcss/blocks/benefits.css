@@ -69,6 +69,18 @@
   @media (--mobile-widths-only) {
     margin-right: 1rem;
   }
+
+  @media (--tablet-widths) {
+    width: 6.4rem;
+    height: 7.5rem;
+  }
+}
+
+.benefits__icon--house {
+  @media (--tablet-widths) {
+    width: 7.5rem;
+    height: 7.2rem;
+  }
 }
 
 .benefits__icon--burger {
@@ -78,6 +90,11 @@
   @media (--mobile-widths-only) {
     margin-top: -0.5rem;
     margin-left: -0.5rem;
+  }
+
+  @media (--tablet-widths) {
+    width: 7.7rem;
+    height: 6.8rem;
   }
 }
 
