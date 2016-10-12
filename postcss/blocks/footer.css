@@ -42,7 +42,7 @@
   margin-top: 1rem;
 
   &:hover {
-    fill: hsl(203, 47%, 66%);
+    fill: $color__primary;
   }
 
   &:active {

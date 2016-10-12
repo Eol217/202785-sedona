@@ -96,7 +96,7 @@
   width: 100%;
   height: 4.5rem;
 
-  background-color: hsla(0, 0%, 0%, 0.6);
+  background-color: $color__video-top;
 
   @media (--tablet-widths) {
     height: 9.3rem;
@@ -108,7 +108,7 @@
   height: 0.3rem;
   margin: auto;
 
-  background-color: hsla(360, 100%, 100%, 0.2);
+  background-color: $color__video-slider;
 
   @media (--tablet-widths) {
     width: 38.9rem;
@@ -154,7 +154,7 @@
 
   @media (--tablet-widths) {
     height: 9.3rem;
-    background-color: hsla(0, 0%, 0%, 0.6);
+    background-color: $color__video-top;
   }
 }
 
@@ -167,14 +167,14 @@
 
 .video__control-icon {
   margin: auto;
-  fill: hsl(204, 10%, 40%);
+  fill: $color__video-icon;
 
   &:hover {
-    fill: hsl(0, 0%, 20%);
+    fill: $color__text--grey;
   }
 
   &:active {
-    fill: hsl(0, 0%, 20%);
+    fill: $color__text--grey;
     opacity: 0.3;
   }
 

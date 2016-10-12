@@ -22,11 +22,11 @@
   fill: white;
 
   &:hover {
-    background-color: hsl(203, 42%, 58%);
+    background-color: $color__btn--hover;
   }
 
   &:active {
-    background-color: hsl(202, 44%, 54%);
+    background-color: $color__btn--active;
   }
 }
 

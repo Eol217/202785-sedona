@@ -88,7 +88,7 @@
       height: 0.1rem;
       width: 28rem;
 
-      background-color: hsla(0, 0%, 0%, 0.1);
+      background-color: $color__decor-line;
     }
   }
 }
