@@ -48,6 +48,8 @@
 
 .intro__svg-title {
   display: block;
+  width: 28.2rem;
+  height: 21.4rem;
   margin: auto;
 
   @media (--tablet-widths) {
@@ -58,7 +60,9 @@
 }
 
 .intro__svg-title--secondary {
-  margin: 0 auto 2rem;
+  width: 22.9rem;
+  height: 3.9rem;
+  margin: auto;
 
   @media (--tablet-widths) {
     margin-top: -4rem;

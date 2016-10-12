@@ -4,6 +4,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   flex-grow: 1;
+  width: 100%;
   margin-top: 0.5rem;
 
   @media (--tablet-widths) {
@@ -25,6 +26,7 @@
   color: white;
 
   @media (--tablet-widths) {
+    max-width: 33%;
     padding: 4.5rem;
     height: 25.6rem;
     flex-basis: 25.6rem;
@@ -64,6 +66,7 @@
   background-color: $color__bg-grey;
 
   @media (--tablet-widths){
+    max-width: 100%;
     padding: 4.4rem 5rem;
   }
 

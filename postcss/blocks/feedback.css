@@ -390,16 +390,15 @@
   width: 100%;
 
   @media (--tablet-widths) {
-    height: 20rem;
+    flex-direction: row;
     margin-left: 7.2rem;
-    padding: 0 6rem;
+    padding: 0 6rem 2.5rem;
   }
 
   @media (--desktop-widths) {
     flex-direction: row;
     justify-content: space-between;
 
-    height: auto;
     margin: 0;
     padding: 0;
   }
@@ -409,18 +408,23 @@
   margin-bottom: 2.4rem;
 
   @media (--tablet-widths) {
+    width: 49%;
     margin-bottom: 3rem;
+  }
+
+  @media (--desktop-widths) {
+    width: auto;
   }
 }
 
 .feedback__choose--checkbox:nth-child(2) {
-  @media (--desktop-widths) {
+  @media (--tablet-widths) {
     order: 1;
   }
 }
 
 .feedback__choose--checkbox:nth-child(4) {
-  @media (--desktop-widths) {
+  @media (--tablet-widths) {
     order: 2;
   }
 }

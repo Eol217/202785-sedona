@@ -1,4 +1,5 @@
 .benefits {
+  width: 100%;
   margin: 0;
   padding: 3.5rem;
   padding-right: 3rem;
@@ -78,6 +79,10 @@
     margin-top: -0.5rem;
     margin-left: -0.5rem;
   }
+}
+
+.benefits__wrapper {
+  max-width: 100%;
 }
 
 .benefits__wrapper--gift {
