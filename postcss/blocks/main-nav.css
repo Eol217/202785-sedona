@@ -100,7 +100,9 @@
 }
 
 .main-nav__toggle {
+  /* stylelint-disable */
   position: absolute;
+  /* stylelint-enable */
   top: 1.6rem;
   right: 2rem;
 

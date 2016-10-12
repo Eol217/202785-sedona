@@ -29,13 +29,12 @@
   align-items: center;
   margin-top: -1.7rem;
 
-
   font-size: $font-size__text;
 
-    @media (--desktop-widths) {
-      margin-right: -8.5rem;
-      margin-left: 9.5rem;
-    }
+  @media (--desktop-widths) {
+    margin-right: -8.5rem;
+    margin-left: 9.5rem;
+  }
 }
 
 .footer__copyright-link {

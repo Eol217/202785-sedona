@@ -148,10 +148,11 @@
   border-radius: 50%;
 }
 
-.feedback__checkbox:checked +
-.feedback__custom::after {
+.feedback__checkbox:checked + .feedback__custom::after {
   content: "";
+  /* stylelint-disable */
   position: absolute;
+  /* stylelint-enable */
   top: 2rem;
   left: 1.7rem;
 
@@ -161,10 +162,11 @@
   background: url("../img/icon-tick.svg") no-repeat;
 }
 
-.feedback__radio:checked +
-.feedback__custom--radio::after {
+.feedback__radio:checked + .feedback__custom--radio::after {
   content: "";
+  /* stylelint-disable */
   position: absolute;
+  /* stylelint-enable */
   top: 1.7rem;
   left: 1.7rem;
 
@@ -175,12 +177,10 @@
   border-radius: 50%;
 }
 
-.feedback__checkbox:checked:active +
-.feedback__custom::after,
-.feedback__radio:checked:active +
-.feedback__custom--radio::after {
-   opacity: 0.3;
- }
+.feedback__checkbox:checked:active + .feedback__custom::after,
+.feedback__radio:checked:active + .feedback__custom--radio::after {
+  opacity: 0.3;
+}
 
 /*--= NAME =--*/
 
