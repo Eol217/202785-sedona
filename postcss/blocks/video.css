@@ -169,6 +169,15 @@
   margin: auto;
   fill: hsl(204, 10%, 40%);
 
+  &:hover {
+    fill: hsl(0, 0%, 20%);
+  }
+
+  &:active {
+    fill: hsl(0, 0%, 20%);
+    opacity: 0.3;
+  }
+
   @media (--tablet-widths) {
     fill: white;
   }

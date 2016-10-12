@@ -14,11 +14,11 @@
         <h1 class="visually-hidden">Sedona "Because the Grand Canyon sucks!"</h1>
         <nav class="main-nav">
           <a class="main-nav__toggle">Закрыть меню</a>
-          <a class="main-nav__item" href="index.html">Главная</a>
-          <a class="main-nav__item" href="photo.html">Фото и видео</a>
-          <a class="main-nav__item main-nav__item--active">Форма отзыва</a>
-          <a class="main-nav__item" href="https://htmlacademy.ru/">HTML Academy</a>
-          <a class="main-nav__item main-nav__item--logo" href="index.html">
+          <a class="main-nav__item main-nav__item--active"><span>Главная</span></a>
+          <a class="main-nav__item" href="photo.html"><span>Фото и видео</span></a>
+          <a class="main-nav__item" href="form.html"><span>Форма отзыва</span></a>
+          <a class="main-nav__item" href="https://htmlacademy.ru/"><span>HTML Academy</span></a>
+          <a class="main-nav__item main-nav__item--logo">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -164,5 +164,7 @@
         mainNav.classList.toggle("main-nav--closed");
       })
     </script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
   </body>
 </html>

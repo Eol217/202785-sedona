@@ -26,6 +26,16 @@
     inset 0 0.1rem 0 hsla(0, 0%, 100%, 0.2),
     0 0.1rem 0 hsla(0, 0%, 0%, 0.2);
 
+  @media (--mobile-widths-only) {
+    &:hover {
+      background-color: hsl(203, 42%, 58%);
+    }
+
+    &:active {
+      background-color: hsl(202, 44%, 54%);
+    }
+  }
+
   @media (--tablet-widths) {
     flex-basis: 15.3rem;
 
@@ -51,6 +61,12 @@
   }
 }
 
+.main-nav__item:active span {
+  @media (--mobile-widths-only) {
+    opacity: 0.3;
+  }
+}
+
 .main-nav__item--active {
   @media (--tablet-widths) {
     color: hsl(23, 15%, 40%);
@@ -67,6 +83,13 @@
 
   background-color: white;
   box-shadow: none;
+}
+
+.main-nav__item--logo:hover,
+.main-nav__item--logo:active {
+  @media (--mobile-widths-only) {
+    background-color: white;
+  }
 }
 
 .main-nav__logo {
